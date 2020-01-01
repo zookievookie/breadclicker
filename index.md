@@ -1,1 +1,42 @@
-blah.
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="The Addictive and Tasty Idle Clicking Game">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="idle, bread, bread clicker, breadclicker">
+  <link rel="stylesheet" href="home.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    if($(window).width() <= 500) {
+      window.location = "mhome.html";
+    }
+  });
+</script>
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <title>Bread Clicker 1.6.3</title>
+</head>
+<body>
+  <header class="navigation">
+    <table class="tabs">
+      <tr>
+        <td><img src="bclogo1.png" class="navlogo"></img></td>
+        <td><a href="home.html" target="_self" class="faketab">Home</a></td>
+        <td><a href="wiki.html" target="_self" class="realtab">Wiki</a></td>
+        <td><a href="discuss.html" target="_self" class="realtab">Discuss</a></td>
+        <td><a href="updates.html" target="_self" class="realtab">Updates</a></td>
+        <td><p class="filler">another easter egg!</p></td>
+        <td><a href="login.html" class="loginbtn">Log In</a></td>
+        <td><a href="register.html" class="registerbtn">Register</a></td>
+    </table class="tabs">
+  </header>
+  <div class="breadclicker">
+    <p>yet another easter egg! you're a clever one!</p>
+    <p>yet another easter egg! you're a clever one!</p>
+  	<iframe width="582" height="482" src="https://scratch.mit.edu/projects/295626170/embed">
+  		<p>Your browser does not support this game.</p>
+  	</iframe>
+  </div>
+</body>
+</html>
