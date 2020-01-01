@@ -1,0 +1,179 @@
+@font-face {
+	font-family:VCSans;
+	src: url('ViceCitySans.otf');
+}
+@font-face {
+	font-family:TinBird;
+	src: url('TinBird.ttf');
+}
+.navlogo {
+	width:250px;
+	height:70px;
+	position:
+	left:1%,
+}
+.navlogo:hover {
+	animation-name:gocrazy;
+	animation-duration:0.5s;
+	animation-delay:10s;
+	animation-iteration-count:infinite;
+}
+@keyframes gocrazy {
+	0% {
+		background-color:red;
+	}
+	50% {
+		background-color:green;
+	}
+	100% {
+		background-color:blue;
+	}
+}
+body {
+	background-color: #ffe1a3;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.navigation {
+	background-color: #624401;
+	padding:5px;
+	z-index: 9000;
+	width:2000px;
+	height:70px;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.tabs a:visited {
+	text-decoration: none;
+}
+.tabs a:link {
+	text-decoration: none;
+}
+.faketab {
+	pointer-events: none;
+	cursor: default;
+	color:#999;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 18pt;
+	margin:10px;
+}
+.realtab {
+	color:#fff;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 18pt;
+	margin:10px;
+}
+.loginbtn {
+	background-color:#ddd;
+	display:inline;
+	text-decoration:none;
+	font-family:VCSans, Arial, sans-serif;
+	font-size:18pt;
+	border:5px solid #ddd;
+	color:#000;
+}
+.registerbtn {
+	background-color:#17d;
+	display:inline;
+	text-decoration:none;
+	font-family:VCSans, Arial, sans-serif;
+	font-size:18pt;
+	border:5px solid #17d;
+	color:#fff;
+	position:sticky;
+	left:100%;
+}
+h1 {
+	font-family: VCSans, Arial, sans-serif;
+	color:black;
+}
+h2 {
+	font-family: VCSans, Arial, sans-serif;
+	color:black;
+}
+h3 {
+	font-family: TinBird; Arial, sans-serif;
+	color:black;
+}
+p {
+	font-family: TinBird; Arial, sans-serif;
+	color:black;
+	text-align: justify;
+}
+.desc {
+	width:85%;
+	margin-right:50px;
+}
+.asidebox {
+	float:right;
+	width:10%;
+	height:100%;
+	z-index: -1;
+	max-height:830px;
+	animation-name:scroller;
+	animation-duration:200s;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+}
+.wikipictures {
+	width:100px;
+	height:auto;
+	z-index:-1;
+}
+@keyframes scroller {
+	0% {
+		transform: translate(0px, -2048px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+.coverbox {
+	float:right;
+	position:relative;
+	top:-165px;
+	z-index: 1;
+}
+.collapsible {
+  background-color: #624401;
+  color: white;
+  font-family:VCSans, Arial, sans-serif;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+	z-index: 2;
+	position:relative;
+  text-align: justify;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #624401;
+	z-index: 2;
+	position:relative;
+}
+.collapsible:after {
+  content: '\002B';
+  color: #ffe1a3;
+  font-weight: bold;
+  float: right;
+	z-index: 2;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+	z-index: 2;
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+	float:left;
+	width:80%;
+  overflow: hidden;
+	z-index: 2;
+  transition: max-height 0.5s ease;
+  background-color: #ffe1a3;
+}

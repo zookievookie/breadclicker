@@ -1,0 +1,84 @@
+﻿@font-face {
+	font-family:VCSans;
+	src: url('ViceCitySans.otf');
+}
+@font-face {
+	font-family:TinBird;
+	src: url('TinBird.ttf');
+}
+.navlogo {
+	width:125px;
+	height:35px;
+	left:1%;
+}
+body {
+	background-color: #ffe1a3;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.navigation {
+	background-color: #624401;
+	padding:5px;
+	width:750px;
+	height:40px;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.tabs a:visited {
+	text-decoration: none;
+}
+.tabs a:link {
+	text-decoration: none;
+}
+.faketab {
+	pointer-events: none;
+	cursor: default;
+	color:#999;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 12pt;
+	margin:5px;
+}
+.realtab {
+	color:#fff;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 12pt;
+	margin:5px;
+}
+.loginbtn {
+	background-color:#ddd;
+	display:inline;
+	text-decoration:none;
+	font-family:VCSans, Arial, sans-serif;
+	font-size:12pt;
+	border:2px solid #ddd;
+	color:#000;
+}
+.registerbtn {
+	background-color:#17d;
+	display:inline;
+	text-decoration:none;
+	font-family:VCSans, Arial, sans-serif;
+	font-size:12pt;
+	border:2px solid #17d;
+	color:#fff;
+	position:sticky;
+	left:100%;
+}
+h1 {
+
+	font-family: VCSans, Arial, sans-serif;
+	color:black;
+}
+h2 {
+	font-family: VCSans, Arial, sans-serif;
+	color:black;
+}
+h3 {
+	font-family: TinBird; Arial, sans-serif;
+	color:black;
+}
+p {
+	font-family: TinBird; Arial, sans-serif;
+	color:black;
+}

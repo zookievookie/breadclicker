@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for HTML5 for Windows version 5.2.0">
+    <link rel="stylesheet" href="register.css">
+    <meta charset="UTF-8" />
+  	<meta name="description" content="The Addictive and Tasty Idle Clicking Game" />
+  	<meta name="keywords" content="idle, bread, bread clicker, breadclicker" />
+  	<title>Register - Bread Clicker</title>
+  	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  </head>
+  <body>
+    <div class="rgbox">
+    	<h1 class="rgtitle">Create an Account</h1>
+    	<p class="rddesc">Creating an account allows functionality to save 
+    										progress and participate in forums and discussions.</p>
+    	
+    	<form method="post" class="rgform">
+    		Username:<br>
+  			<input type="text" name="username"><br>
+  			Password:<br>
+  			<input type="password" name="password"><br>
+  			Confirm Password:<br>
+  			<input type="password" name="cpassword"<br><br>
+  			<input type="submit" value="Create" target="_self">
+  		</form>
+  		<img src="bclogo1.png" class="asidelogo">
+    </div>
+    <aside>
+    	
+  </body>
+</html>
+<?php
+if(isset($_POST['username']))
+{
+$data=$_POST['username'];
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+}
+?>
+<?php
+if(isset($_POST['password']))
+{
+$data=$_POST['password'];
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+}
+?>
+<?php
+if(isset($_POST['cpassword']))
+{
+$data=$_POST['cpassword'];
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+}
+?>
