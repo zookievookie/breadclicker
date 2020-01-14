@@ -1,0 +1,127 @@
+@font-face {
+	font-family:VCSans;
+	src: url('resources/ViceCitySans.otf');
+}
+@font-face {
+	font-family:TinBird;
+	src: url('resources/TinBird.ttf');
+}
+.navlogo {
+	width:250px;
+	height:70px;
+	position:relative;
+	top:-35px;
+	left:-30px;
+}
+.navlogo:hover {
+	animation-name:gocrazy;
+	animation-duration:0.5s;
+	animation-delay:10s;
+	animation-iteration-count:infinite;
+}
+@keyframes gocrazy {
+	0% {
+		background-color:red;
+	}
+	50% {
+		background-color:green;
+	}
+	100% {
+		background-color:blue;
+	}
+}
+body {
+	background-color: #ffe1a3;
+}
+.navigation {
+	background-color: #624401;
+	padding:2%;
+	width:100%;
+	height:30px;
+}
+.tabs a:visited {
+	text-decoration: none;
+}
+.tabs a:link {
+	text-decoration: none;
+}
+.hometab {
+	position:relative;
+	top:-33px;
+	left:0px;
+	color:#fff;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 18pt;
+	width:60px;
+	height:120px;
+}
+.wikitab {
+	position:relative;
+	top:-33px;
+	left:25px;
+	color:#fff;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 18pt;
+	width:60px;
+	height:120px;
+}
+.discusstab {
+	position:relative;
+	top:-33px;
+	left:50px;
+	color:#fff;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 18pt;
+	width:60px;
+	height:120px;
+}
+.updatestab {
+	pointer-events: none;
+	cursor: default;
+	position:relative;
+	top:-33px;
+	left:75px;
+	color:#999;
+	font-family: VCSans, Arial, sans-serif;
+	font-size: 18pt;
+	width:60px;
+	height:120px;
+}
+.loginbtn {
+	background-color:#ddd;
+	position:relative;
+	top:-103px;
+	left:1050px;
+	text-decoration:none;
+	font-family:VCSans, Arial, sans-serif;
+	font-size:18pt;
+	border:5px solid #ddd;
+	color:#000;
+}
+.registerbtn {
+	background-color:#2159f0;
+	position:relative;
+	top:-103px;
+	left:1055px;
+	text-decoration:none;
+	font-family:VCSans, Arial, sans-serif;
+	font-size:18pt;
+	border:5px solid #2159f0;
+	color:#fff;
+}
+h1 {
+	font-family: VCSans, Arial, sans-serif;
+	color:black;
+}
+h2 {
+	font-family: VCSans, Arial, sans-serif;
+	color:black;
+}
+h3 {
+	font-family: TinBird; Arial, sans-serif;
+	color:black;
+}
+p {
+	font-family: TinBird; Arial, sans-serif;
+	color:black;
+}

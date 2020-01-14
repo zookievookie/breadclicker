@@ -1,0 +1,226 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Addictive and Tasty Idle Clicking Game.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="idle, bread, bread clicker, breadclicker">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+      $(document).ready(function(){
+        if($(window).width() <= 500) {
+          window.location = "mhome.html";
+        }
+      });
+    </script>
+    <link rel='icon' href='resources/images/favicon.ico' type='image/x-icon'>
+    <title>Bread Clicker 1.6.7</title>
+    <style>
+      @font-face {
+        font-family:VCSans;
+        src: url('resources/fonts/ViceCitySans.otf');
+      }
+      @font-face {
+        font-family:TinBird;
+        src: url('resources/fonts/TinBird.ttf');
+      }
+      @font-face {
+        font-family:GoodDog;
+        src: url('resources/fonts/GOODDP__.ttf');
+      }
+      @keyframes fading{
+        0%{
+          opacity:0
+        }
+        25% {
+          opacity:1
+        }
+        80%{
+          opacity:1
+        }
+        100%{
+          opacity:0
+        }
+      }
+      .logo {
+        width:250px;
+        height:70px;
+      }
+      .logotitle {
+        position:absolute;
+        top:-30%;
+        left:3.75%;
+        font-family: GoodDog;
+        color:black;
+        font-size:32.5pt;
+      }
+      .logoversion {
+        position:absolute;
+        top:55%;
+        left:4.3%;
+        font-family: monospace;
+        color:black;
+        font-size: 8pt;
+        font-weight:900;
+      }
+      .logopointer {
+        position:absolute;
+        top:48%;
+        left:2.8%;
+        height:40px;
+        width:auto;
+      }
+      .picsrc {
+        animation-name:fading;
+        animation-duration:4s;
+        animation-iteration-count:infinite;
+        height:60px;
+        width:65px;
+      }
+      .picgen {
+        position:absolute;
+        top: 5%;
+        left: 0.2%;
+        z-index:-1;
+        padding:5px;
+        width:10%;
+      }
+      .navigation {
+        background-color: #624401;
+        padding:5px;
+        width:2000px;
+        height:70px;
+        position:fixed;
+        top:0px;
+        left:0px;
+      }
+      .game {
+        display:block;
+        margin:0 auto;
+        border:solid;
+        border-width:10px;
+        border-color:#624401;
+      }
+      .tabs a:visited {
+        text-decoration: none;
+      }
+      .tabs a:link {
+        text-decoration: none;
+      }
+      .faketab {
+        pointer-events: none;
+        cursor: default;
+        color:#999;
+        font-family: VCSans, Arial, sans-serif;
+        font-size: 18pt;
+        margin:10px;
+      }
+      .realtab {
+        color:#fff;
+        font-family: VCSans, Arial, sans-serif;
+        font-size: 18pt;
+        margin:10px;
+      }
+      .filler {
+        color:#624401;
+        margin-left:270px;
+      }
+      .loginbtn {
+        background-color:#ddd;
+        display:inline;
+        text-decoration:none;
+        font-family:VCSans, Arial, sans-serif;
+        font-size:18pt;
+        border:5px solid #ddd;
+        color:#000;
+      }
+      .registerbtn {
+        background-color:#17d;
+        display:inline;
+        text-decoration:none;
+        font-family:VCSans, Arial, sans-serif;
+        font-size:18pt;
+        border:5px solid #17d;
+        color:#fff;
+        position:sticky;
+        left:100%;
+      }
+      body {
+        background-color: #ffe1a3;
+        overflow-x:scroll;
+        overflow-y:scroll;
+      }
+      h1 {
+        font-family: VCSans, Arial, sans-serif;
+        color:black;
+      }
+      h2 {
+        font-family: VCSans, Arial, sans-serif;
+        color:black;
+      }
+      h3 {
+        font-family: TinBird, Arial, sans-serif;
+        color:black;
+      }
+      p {
+        font-family: TinBird; Arial, sans-serif;
+        color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navigation">
+      <table class="tabs">
+        <tr>
+          <td class="logo">
+            <p class="logotitle">Bread Clicker</p>
+            <p class="logoversion">v1.6.7</p>
+            <img class="logopointer" src="resources/images/logopointer.svg"/></td>
+          <td><a href="home.html" target="_self" class="faketab">Home</a></td>
+          <td><a href="wiki.html" target="_blank" class="realtab">Wiki</a></td>
+          <td><a href="discuss.html" target="_blank" class="realtab">Discuss</a></td>
+          <td><a href="updates.html" target="_blank" class="realtab">Updates</a></td>
+          <td><div class="picgen">
+            <img class="picsrc" src="resources/images/baker.png">
+            <img class="picsrc" src="resources/images/bakery.png">
+            <img class="picsrc" src="resources/images/cornbread.png">
+            <img class="picsrc" src="resources/images/croissant.png">
+            <img class="picsrc" src="resources/images/gingerbread.png">
+            <img class="picsrc" src="resources/images/grapejelly.png">
+            <img class="picsrc" src="resources/images/honey.png">
+            <img class="picsrc" src="resources/images/margarine.png">
+            <img class="picsrc" src="resources/images/oven.png">
+            <img class="picsrc" src="resources/images/plainbread.png">
+            <img class="picsrc" src="resources/images/pumpkinbread.png">
+            <img class="picsrc" src="resources/images/roll.png">
+            <img class="picsrc" src="resources/images/sourdough.png">
+            <img class="picsrc" src="resources/images/strawberryjam.png">
+            <img class="picsrc" src="resources/images/toaster.png">
+            <img class="picsrc" src="resources/images/wheatfarm.png">
+            <img class="picsrc" src="resources/images/wholewheat.png">
+            <script>
+              var slideIndex = 0;
+              carousel();
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("picsrc");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 4000);
+              }
+            </script>
+          </div></td>
+          <td><a href="login.html" class="loginbtn">Log In</a></td>
+          <td><a href="register.html" class="registerbtn">Register</a></td>
+        </tr>
+      </table class="tabs">
+  </header>
+    <p>hello there!</p>
+    <p>be sure to keep up with updates on social media!</p>
+    <iframe class="game" width="582" height="482" src="https://scratch.mit.edu/projects/295626170/embed">
+    </iframe>
+    </body>
+</html>
