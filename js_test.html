@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      /* Load Fonts */
+      @font-face {font-family:head; src: url('resources/fonts/head.otf');}
+      @font-face {font-family:text; src: url('resources/fonts/text.ttf');}
+      @font-face {font-family:logo; src: url('resources/fonts/logo.ttf');}
+      /* Fade between images in logo */
+      @keyframes fading{0%{opacity:0}25%{opacity:1}80%{opacity:1}100%{opacity:0}}
+      /* New logo is purely HTML to easily modify & edit */
+      .logo {width:250px; height:70px;}
+      .logotitle {position:absolute; top:-30%; left:3.75%; font-family:logo; font-size:32.5pt;}
+      .logoversion {position:absolute; top:55%; left:4.3%; font-family: monospace; font-size: 8pt; font-weight:900;}
+      .logopointer {position:absolute; top:48%; left:2.8%; height:40px; width:auto;}
+      /* Image logo generation and display */
+      .picsrc {animation-name:fading; animation-duration:4s; animation-iteration-count:infinite; height:60px; width:65px;}
+      .picgen {position:absolute; top: 5%; left: 0.2%; z-index:-1; padding:5px; width:10%;}
+      /* Style the top bar */
+      .navigation {background-color: #624401; padding:5px; width:2000px; height:70px; position:fixed; top:0px; left:0px;}
+      /* General styling of text on website */
+      h1, h2 {font-family:head, sans-serif;}
+      h3, p {font-family:text, sans-serif;}
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <table class="tabs">
+        <tr>
+          <td class="logo">
+            <p class="logotitle">Bread Clicker</p>
+            <p class="logoversion">v1.6.7</p>
+            <img class="logopointer" src="resources/images/logopointer.svg"/></td>
+          <td><a href="home.html" target="_self" class="faketab">Home</a></td>
+          <td><a href="wiki.html" target="_blank" class="realtab">Wiki</a></td>
+          <td><a href="discuss.html" target="_blank" class="realtab">Discuss</a></td>
+          <td><a href="updates.html" target="_blank" class="realtab">Updates</a></td>
+          <td class="picgen">
+            <img class="picsrc" src="resources/images/baker.png">
+            <img class="picsrc" src="resources/images/bakery.png">
+            <img class="picsrc" src="resources/images/cornbread.png">
+            <img class="picsrc" src="resources/images/croissant.png">
+            <img class="picsrc" src="resources/images/gingerbread.png">
+            <img class="picsrc" src="resources/images/grapejelly.png">
+            <img class="picsrc" src="resources/images/honey.png">
+            <img class="picsrc" src="resources/images/margarine.png">
+            <img class="picsrc" src="resources/images/oven.png">
+            <img class="picsrc" src="resources/images/plainbread.png">
+            <img class="picsrc" src="resources/images/pumpkinbread.png">
+            <img class="picsrc" src="resources/images/roll.png">
+            <img class="picsrc" src="resources/images/sourdough.png">
+            <img class="picsrc" src="resources/images/strawberryjam.png">
+            <img class="picsrc" src="resources/images/toaster.png">
+            <img class="picsrc" src="resources/images/wheatfarm.png">
+            <img class="picsrc" src="resources/images/wholewheat.png">
+            <script>
+              var slideIndex = 0;
+              carousel();
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("picsrc");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 4000);
+              }
+            </script></td>
+          <td><a href="login.html" class="loginbtn">Log In</a></td>
+          <td><a href="register.html" class="registerbtn">Register</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
