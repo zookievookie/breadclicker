@@ -5,129 +5,69 @@
     <meta name="description" content="Bread Clicker, the addictive and tasty idle clicking game." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="idle, bread, bread clicker, breadclicker" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-      $(document).ready(function(){
-        if($(window).width() <= 500) {
-          window.location = "mhome.html";
-        }
-      });
-    </script>
     <link rel='icon' href='resources/images/favicon.ico' type='image/x-icon' />
     <title>Bread Clicker 1.6.7</title>
     <style>
-      /* Load Fonts */
-      @font-face {font-family:head; src: url('resources/fonts/head.otf');}
-      @font-face {font-family:text; src: url('resources/fonts/text.ttf');}
-      @font-face {font-family:logo; src: url('resources/fonts/logo.ttf');}
-      /* Fade between images in logo */
-      @keyframes fading{0%{opacity:0}25%{opacity:1}80%{opacity:1}100%{opacity:0}}
-      /* New logo is purely HTML to easily modify & edit */
-      .logo {width:250px; height:70px;}
-      .logotitle {position:absolute; top:-30%; left:3.75%; font-family:logo; font-size:32.5pt;}
-      .logoversion {position:absolute; top:55%; left:4.3%; font-family: monospace; font-size: 8pt; font-weight:900;}
-      .logopointer {position:absolute; top:48%; left:2.8%; height:40px; width:auto;}
-      /* Image logo generation and display */
-      .picsrc {animation-name:fading; animation-duration:4s; animation-iteration-count:infinite; height:60px; width:65px;}
-      .picgen {position:absolute; top: 5%; left: 0.2%; z-index:-1; padding:5px; width:10%;}
-      /* Style the top bar */
-      .navigation {background-color: #624401; padding:5px; width:2000px; height:70px; position:fixed; top:0px; left:0px;}
-      /* General styling of text on website */
-      h1, h2 {font-family:head, sans-serif;}
-      h3, p {font-family:text, sans-serif;}
-      .game {
-        display:block;
-        margin:0 auto;
-        border:solid;
-        border-width:10px;
-        border-color:#624401;
-      }
-      .tabs a:visited {
-        text-decoration: none;
-      }
-      .tabs a:link {
-        text-decoration: none;
-      }
-      .faketab {
-        pointer-events: none;
-        cursor: default;
-        color:#999;
-        font-family: head, Arial, sans-serif;
-        font-size: 18pt;
-        margin:10px;
-      }
-      .realtab {
-        color:#fff;
-        font-family: head, Arial, sans-serif;
-        font-size: 18pt;
-        margin:10px;
-      }
-      .filler {
-        color:#624401;
-        margin-left:270px;
-      }
-      .loginbtn {
-        background-color:#ddd;
-        display:inline;
-        text-decoration:none;
-        font-family:head, Arial, sans-serif;
-        font-size:18pt;
-        border:5px solid #ddd;
-        color:#000;
-      }
-      .registerbtn {
-        background-color:#17d;
-        display:inline;
-        text-decoration:none;
-        font-family:head, Arial, sans-serif;
-        font-size:18pt;
-        border:5px solid #17d;
-        color:#fff;
-        position:sticky;
-        left:100%;
-      }
-      body {
-        background-color: #ffe1a3;
-        overflow-x:scroll;
-        overflow-y:scroll;
-      }
+      @font-face{font-family:h;src:url('r/f/h.otf')}
+      @font-face{font-family:t;src:url('r/f/t.ttf')}
+      @font-face{font-family:l;src:url('r/f/l.ttf')}
+      @keyframes f{0%,100%{opacity:0}25%,80%{opacity:1}}
+      .A0{width:250px;height:70px}
+      .A1{position:absolute;top:48%;left:2.8%;height:40px;width:auto}
+      .A2{position:absolute;top:55%;left:4.3%;font:900 8pt monospace}
+      .A3{position:absolute;top:-30%;left:3.75%;font:32.5pt l}
+      .A4{animation:f 4s infinite;height:60px;width:65px}
+      .A5{position:absolute;top:5%;left:0.2%;z-index:-1;padding:5px;width:10%}
+      .A6{color:#999;font:18pt h;margin:10px;pointer-events:none;cursor:default}
+      .A7{color:#fff;font:18pt h;margin:10px}
+      .A8{background-color:#ddd;text-decoration:none;font:18pt h;border:5px solid#ddd;color:#000}
+      .A9{background-color:#17d;text-decoration:none;font:18pt h;border:5px solid#17d;color:#fff}
+      .A10{background-color:#640;padding:5px;width:2000px;height:70px;position:fixed;top:0px;left:0px}
+      .A11{background-color:#fda;padding:80px}
+      .A12 a:visited,a:link{text-decoration:none}
+      h1,h2{font-family:h}
+      h3,p{font-family:t;text-align:justify}
+      .game{display:block;margin:0 auto;border:10px solid #640}
     </style>
   </head>
-  <body>
-    <header class="navigation">
-      <table class="tabs">
+  <body class="A11">
+    <header class="A10">
+      <table class="A12">
         <tr>
-          <td class="logo">
-            <p class="logotitle">Bread Clicker</p>
-            <p class="logoversion">v1.6.7</p>
-            <img class="logopointer" src="resources/images/logopointer.svg"/></td>
-          <td><a href="home.html" target="_self" class="faketab">Home</a></td>
-          <td><a href="wiki.html" target="_blank" class="realtab">Wiki</a></td>
-          <td><a href="discuss.html" target="_blank" class="realtab">Discuss</a></td>
-          <td><a href="updates.html" target="_blank" class="realtab">Updates</a></td>
-          <td><div class="picgen">
-            <img class="picsrc" src="resources/images/baker.png">
-            <img class="picsrc" src="resources/images/bakery.png">
-            <img class="picsrc" src="resources/images/cornbread.png">
-            <img class="picsrc" src="resources/images/croissant.png">
-            <img class="picsrc" src="resources/images/gingerbread.png">
-            <img class="picsrc" src="resources/images/grapejelly.png">
-            <img class="picsrc" src="resources/images/honey.png">
-            <img class="picsrc" src="resources/images/margarine.png">
-            <img class="picsrc" src="resources/images/oven.png">
-            <img class="picsrc" src="resources/images/plainbread.png">
-            <img class="picsrc" src="resources/images/pumpkinbread.png">
-            <img class="picsrc" src="resources/images/roll.png">
-            <img class="picsrc" src="resources/images/sourdough.png">
-            <img class="picsrc" src="resources/images/strawberryjam.png">
-            <img class="picsrc" src="resources/images/toaster.png">
-            <img class="picsrc" src="resources/images/wheatfarm.png">
-            <img class="picsrc" src="resources/images/wholewheat.png">
+          <td class="A0">
+            <img class="A1" src="r/i/logopointer.svg"/>
+            <p class="A2">v1.6.7</p>
+            <p class="A3">Bread Clicker</p></td>
+          <td><a href="home.html" target="_blank" class="A6">Home</a></td>
+          <td><a href="wiki.html" target="_blank" class="A7">Wiki</a></td>
+          <td><a href="discuss.html" target="_blank" class="A7">Discuss</a></td>
+          <td><a href="updates.html" target="_blank" class="A7">Updates</a></td>
+          <td><a href="signin.html" class="A8">Log In</a></td>
+          <td><a href="signin.html" class="A9">Register</a></td>
+          <td class="A5">
+            <img class="A4" src="r/i/baker.png">
+            <img class="A4" src="r/i/bakery.png">
+            <img class="A4" src="r/i/cornbread.png">
+            <img class="A4" src="r/i/croissant.png">
+            <img class="A4" src="r/i/gingerbread.png">
+            <img class="A4" src="r/i/grapejelly.png">
+            <img class="A4" src="r/i/honey.png">
+            <img class="A4" src="r/i/margarine.png">
+            <img class="A4" src="r/i/oven.png">
+            <img class="A4" src="r/i/plainbread.png">
+            <img class="A4" src="r/i/pumpkinbread.png">
+            <img class="A4" src="r/i/roll.png">
+            <img class="A4" src="r/i/sourdough.png">
+            <img class="A4" src="r/i/strawberryjam.png">
+            <img class="A4" src="r/i/toaster.png">
+            <img class="A4" src="r/i/wheatfarm.png">
+            <img class="A4" src="r/i/wholewheat.png">
             <script>
               var slideIndex = 0;
               carousel();
               function carousel() {
                 var i;
-                var x = document.getElementsByClassName("picsrc");
+                var x = document.getElementsByClassName("A4");
                 for (i = 0; i < x.length; i++) {
                   x[i].style.display = "none";
                 }
@@ -136,15 +76,10 @@
                 x[slideIndex-1].style.display = "block";
                 setTimeout(carousel, 4000);
               }
-            </script>
-          </div></td>
-          <td><a href="signin.html" class="loginbtn">Log In</a></td>
-          <td><a href="register.html" class="registerbtn">Register</a></td>
+            </script></td>
         </tr>
-      </table class="tabs">
+      </table>
     </header>
-    <p>hello there!</p>
-    <p>be sure to keep up with updates on social media!</p>
     <iframe class="game" width="582" height="482" src="https://scratch.mit.edu/projects/295626170/embed">
     </iframe>
     </body>

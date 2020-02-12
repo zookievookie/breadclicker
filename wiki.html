@@ -1,409 +1,293 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="The Addictive and Tasty Idle Clicking Game">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="idle, bread, bread clicker, breadclicker">
-    <link rel='icon' href='resources/images/favicon.ico' type='image/x-icon'/ >
+    <meta charset="UTF-8"/>
+    <meta name="description"content="The Addictive and Tasty Idle Clicking Game">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <meta name="keywords"content="idle, bread, bread clicker, breadclicker">
+		<link rel='icon'href='r/i/favicon.ico'type='image/x-icon'/>
     <title>Bread Clicker Wiki</title>
     <style>
-      @font-face {
-        font-family:head;
-        src: url('resources/fonts/head.otf');
-      }
-      @font-face {
-        font-family:text;
-        src: url('resources/fonts/text.ttf');
-      }
-      .navlogo {
-        width:250px;
-        height:70px;
-        position:
-        left:1%,
-      }
-      .navlogo:hover {
-        animation-name:gocrazy;
-        animation-duration:0.5s;
-        animation-delay:10s;
-        animation-iteration-count:infinite;
-      }
-      @keyframes gocrazy {
-        0% {
-          background-color:red;
-        }
-        50% {
-          background-color:green;
-        }
-        100% {
-          background-color:blue;
-        }
-      }
-      body {
-        background-color: #ffe1a3;
-        overflow-x:hidden;
-        overflow:scroll;
-        margin: 0;
-      }
-      .navigation {
-        background-color: #624401;
-        padding:5px;
-        z-index: 9000;
-        width:2000px;
-        height:70px;
-        position:fixed;
-        top:0px;
-        left:0px;
-      }
-      .tabs a:visited {
-        text-decoration: none;
-      }
-      .tabs a:link {
-        text-decoration: none;
-      }
-      .faketab {
-        pointer-events: none;
-        cursor: default;
-        color:#999;
-        font-family: head, Arial, sans-serif;
-        font-size: 18pt;
-        margin:10px;
-      }
-      .realtab {
-        color:#fff;
-        font-family: head, Arial, sans-serif;
-        font-size: 18pt;
-        margin:10px;
-      }
-      .loginbtn {
-        background-color:#ddd;
-        display:inline;
-        text-decoration:none;
-        font-family:head, Arial, sans-serif;
-        font-size:18pt;
-        border:5px solid #ddd;
-        color:#000;
-      }
-      .registerbtn {
-        background-color:#17d;
-        display:inline;
-        text-decoration:none;
-        font-family:head, Arial, sans-serif;
-        font-size:18pt;
-        border:5px solid #17d;
-        color:#fff;
-        position:sticky;
-        left:100%;
-      }
-      h1 {
-        font-family: text, Arial, sans-serif;
-        color:black;
-      }
-      h2 {
-        font-family: text, Arial, sans-serif;
-        color:black;
-      }
-      h3 {
-        font-family: text; Arial, sans-serif;
-        color:black;
-      }
-      p {
-        font-family: text; Arial, sans-serif;
-        color:black;
-        text-align: justify;
-      }
-      .desc {
-        width:85%;
-        margin-right:50px;
-      }
-      .asidebox {
-        float:right;
-        width:10%;
-        max-height:200px;
-        position:relative;
-        z-index: -1;
-        max-height:830px;
-      }
-      .picsrc {
-        animation-name:fading;
-        animation-duration:4s;
-        animation-iteration-count:infinite;
-        height:60px;
-        width:65px;
-      }
-      @keyframes fading{
-        0%{
-          opacity:0
-        }
-        25% {
-          opacity:1
-        }
-        80%{
-          opacity:1
-        }
-        100%{
-          opacity:0
-        }
-      }
-      .wikipictures {
-        position:relative;
-        width:100px;
-        height:auto;
-        z-index:-1;
-      }
-      .collapsible {
-        background-color: #624401;
-        color: white;
-        font-family:head, Arial, sans-serif;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        z-index: 2;
-        position:relative;
-        text-align: justify;
-        outline: none;
-        font-size: 15px;
-      }
-      .active, .collapsible:hover {
-        background-color: #624401;
-        z-index: 2;
-        position:relative;
-      }
-      .collapsible:after {
-        content: '\002B';
-        color: #ffffff;
-        font-weight: bold;
-        float: right;
-        z-index: 2;
-        margin-left: 5px;
-      }
-      .active:after {
-        content: "\2212";
-        z-index: 2;
-      }
-      .content {
-        padding: 0 18px;
-        max-height: 0;
-        float:left;
-        width:80%;
-        overflow: hidden;
-        z-index: 2;
-        transition: max-height 0.5s ease;
-        background-color: #ffe1a3;
-      }
+      @font-face{font-family:h;src:url('r/f/h.otf')}
+      @font-face{font-family:t;src:url('r/f/t.ttf')}
+      @font-face{font-family:l;src:url('r/f/l.ttf')}
+      @keyframes f{0%,100%{opacity:0}25%,80%{opacity:1}}
+      .A0{width:250px;height:70px}
+      .A1{position:absolute;top:48%;left:2.8%;height:40px;width:auto}
+      .A2{position:absolute;top:55%;left:4.3%;font:900 8pt monospace}
+      .A3{position:absolute;top:-30%;left:3.75%;font:32.5pt l}
+      .A4{animation:f 4s infinite;height:60px;width:65px}
+      .A5{position:absolute;top:5%;left:0.2%;z-index:-1;padding:5px;width:10%}
+      .A6{color:#999;font:18pt h;margin:10px;pointer-events:none;cursor:default}
+      .A7{color:#fff;font:18pt h;margin:10px}
+      .A8{background-color:#ddd;text-decoration:none;font:18pt h;border:5px solid#ddd;color:#000}
+      .A9{background-color:#17d;text-decoration:none;font:18pt h;border:5px solid#17d;color:#fff}
+      .A10{background-color:#640;padding:5px;width:2000px;height:70px;position:fixed;top:0px;left:0px}
+      .A11{background-color:#fda;padding:80px}
+      .A12 a:visited,a:link{text-decoration:none}
+      h1,h2{font:h}
+      h3,p{font-family:t;text-align:justify}
+      /*End Standard Document Rules*/
+      button{font-family:h;}
+      .filler{color:#640;margin-left:270px}
+      .desc {width:85%;margin-right:50px}
+      .B9,.C1{display:inline;width:50%;margin:0 auto;height:30vh}
+      .but{color:#fff!important;background-color:#00f!important}
+      .B8,.C0{border:none;padding:10px;cursor:pointer;width:auto}
+      .slt{display:inline;float:right;width:60%;font-size:12pt}
+      .slp{height:70%;display:inline;float:left}
+      span{font-weight:bold;color:green}
     </style>
   </head>
-  <body>
-    <header class="navigation">
-      <table class="tabs">
-      	<tr>
-      		<td><img src="resources/images/bclogo1.png" class="navlogo"></img></td>
-      		<td><a href="home.html" target="_self" class="realtab">Home</a></td>
-      		<td><a href="wiki.html" target="_self" class="faketab">Wiki</a></td>
-      		<td><a href="" target="_self" class="realtab">Discuss</a></td>
-      		<td><a href="" target="_self" class="realtab">Updates</a></td>
-      		<td><a href="signin.html" class="loginbtn">Log In</a></td>
-        	<td><a href="signin.html" class="registerbtn">Register</a></td>
-        </tr>
-      </table class="tabs">
-    </header>
-    <p>oh boy more easter eggs!</p>
-    <p>oh boy more easter eggs!</p>
-    <div class="asidebox">
-      <img class="picsrc" src="resources/images/baker.png">
-      <img class="picsrc" src="resources/images/bakery.png">
-      <img class="picsrc" src="resources/images/cornbread.png">
-      <img class="picsrc" src="resources/images/croissant.png">
-      <img class="picsrc" src="resources/images/gingerbread.png">
-      <img class="picsrc" src="resources/images/grapejelly.png">
-      <img class="picsrc" src="resources/images/honey.png">
-      <img class="picsrc" src="resources/images/margarine.png">
-      <img class="picsrc" src="resources/images/oven.png">
-      <img class="picsrc" src="resources/images/plainbread.png">
-      <img class="picsrc" src="resources/images/pumpkinbread.png">
-      <img class="picsrc" src="resources/images/roll.png">
-      <img class="picsrc" src="resources/images/sourdough.png">
-      <img class="picsrc" src="resources/images/strawberryjam.png">
-      <img class="picsrc" src="resources/images/toaster.png">
-      <img class="picsrc" src="resources/images/wheatfarm.png">
-      <img class="picsrc" src="resources/images/wholewheat.png">
+  <body class="A11">
+    <!--bread slideshow-->
+    <div>
+      <!--Title and Description, Slides, and Buttons-->
+      <div>
+        <h2>Breads</h2>
+        <p>The core upgrade of Bread Clicker. Gives you DPS and DPC, along with
+          a new item to click on!
+        </p></div>
+      <h2>Breads</h2>
+      <div style="padding:10px;display:inline-block;">
+        <div class="B9">
+          <img class="slp" src="r/i/plainbread.png" />
+          <h3 class="slt">
+            The original bread of Bread Clicker! White bread is the right bread,
+            said John Adams I think. Your everyday type of bread. Goes well with
+            ham and cheese, but can be used for just about everything. Gives you
+            <span>1 DPC.</span>
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/roll.png" />
+          <h3 class="slt">
+            Being the first purchase you could make in the game, the roll is a
+            classic bread sporting a nice round shape that was added on March 25,
+            2019 in update 0.1.1. "I'm on a ROLL!!! Hahahaha!" For the more
+            adventurous. In the shape of a hemisphere. Line down the middle for
+            your spreads, like butter. Gives you <span>2 DPC</span> and <span>
+            +0.1 DPS</span>. Costs <span>50 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/wholewheat.png" />
+          <h3 class="slt">
+            This tasty treat originates back to March 26, 2019 when it was added
+            along with the DPS counter and World Record display in update 0.1.2.5.
+            "Not to be confused for Hole Wheat, Whole Heat, or Hole Heat." Definitely
+            delicious and healthy. Full of your necessary calories, carbs, and fiber
+            to get you through the struggles life. Gives you <span>3 DPC</span>
+            and <span>+0.4 DPS</span>. Costs <span>250 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/sourdough.png" />
+          <h3 class="slt">
+            A fine addition to the bread basket, sourdough was released on April
+            3, 2019 in update 0.4. "It's not even tart." Not fantastically sour,
+            but whoever made the crosses on top gets their 5-star review from me.
+            Gives you <span>4 DPC</span> and <span>+0.5 DPS</span>. Costs <span>500
+            dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/baguette.png" />
+          <h3 class="slt">
+            The longest bread currently available. It was released on April 16,
+            2019 in update 0.8. "HONHONHON OUI OUI BAGUETTE" French delicacy. It
+            can be used to knock somebody out, I'll give 'em that. How are you
+            supposed to eat these? Gives you <span>5 DPC</span> and <span>
+            +1 DPS</span>. Costs <span>2500 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/croissant.png" />
+          <h3 class="slt">
+            Another french delicacy added to the menu on April 25, 2019 in update
+            0.9.9. "Only the French truly know how to spell corantsanant" Hard to
+            spell, easy to pronounce. Cwa-sawn. By the way, are you gonna finish
+            that croissant? Gives you <span>6 DPC</span> and <span>+1 DPS</span>.
+            Costs <span>5000 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/bananabread.png" />
+          <h3 class="slt">
+            At the full release of Bread Clicker 1.0 on April 27, 2019, the classic
+            fruity bread, banana bread, was added to the game. "A fan favorite,
+            but not a flan favorite" Butter it, don't bother toasting it! This
+            fruity delight will set you ahead of the game with its stats. It will
+            set you back with its price though! (Tax not included) Gives you <span>
+            8 DPC</span> and <span>+2 DPS</span>. Costs <span>10000 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/baguette.png" />
+          <h3 class="slt">
+            The breads keep getting more diverse, but cornbread, added on October
+            29, 2019 in update 1.3.7, takes it to a new level. "Can also be a muffin."
+            Made from corn, and it is delicious with as much butter as you can
+            fit onto it. Makes you feel poor though. Gives you <span>12 DPC</span>
+            and <span>+2 DPS</span>. Costs <span>50000 dough</span>.
+          </h3></div></div>
+        <div class="B9">
+          <img class="slp" src="r/i/butter.png" />
+          <h3 class="slt">
+            A super tasty and original classic that you just can't pass up on!
+            This was the first spread that was placed into the game on April 2, 
+            2019 in update 0.1.4. "It is butter. You butter believe it!" Straight 
+            from the farm, slightly salted. A very affordable purchase from the 
+            grocery store or in-game. Gives you <span>1%</span>. Costs <span>50 
+            dough</span>.</h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/strawberryjam.png" />
+          <h3 class="slt">
+            Being the first purchase you could make in the game, the roll is a
+            classic bread sporting a nice round shape that was added on March 25,
+            2019 in update 0.1.1. "I'm on a ROLL!!! Hahahaha!" For the more
+            adventurous. In the shape of a hemisphere. Line down the middle for
+            your spreads, like butter. Gives you <span>2 DPC</span> and <span>
+            +0.1 DPS</span>. Costs <span>50 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/grapejelly.png" />
+          <h3 class="slt">
+            This tasty treat originates back to March 26, 2019 when it was added
+            along with the DPS counter and World Record display in update 0.1.2.5.
+            "Not to be confused for Hole Wheat, Whole Heat, or Hole Heat." Definitely
+            delicious and healthy. Full of your necessary calories, carbs, and fiber
+            to get you through the struggles life. Gives you <span>3 DPC</span>
+            and <span>+0.4 DPS</span>. Costs <span>250 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/margarine.png" />
+          <h3 class="slt">
+            A fine addition to the bread basket, sourdough was released on April
+            3, 2019 in update 0.4. "It's not even tart." Not fantastically sour,
+            but whoever made the crosses on top gets their 5-star review from me.
+            Gives you <span>4 DPC</span> and <span>+0.5 DPS</span>. Costs <span>500
+            dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="r/i/honey.png" />
+          <h3 class="slt">
+            The longest bread currently available. It was released on April 16,
+            2019 in update 0.8. "HONHONHON OUI OUI BAGUETTE" French delicacy. It
+            can be used to knock somebody out, I'll give 'em that. How are you
+            supposed to eat these? Gives you <span>5 DPC</span> and <span>
+            +1 DPS</span>. Costs <span>2500 dough</span>.
+          </h3></div>  
+      </div>
+      <div>
+        <button class="B8" onclick="u(1)">Basic Bread</button>
+        <button class="B8" onclick="u(2)">Roll</button>
+        <button class="B8" onclick="u(3)">Whole Wheat</button>
+        <button class="B8" onclick="u(4)">Sourdough</button>
+        <button class="B8" onclick="u(5)">Baguette</button>
+        <button class="B8" onclick="u(6)">Croissant</button>
+        <button class="B8" onclick="u(7)">Banana Bread</button>
+        <button class="B8" onclick="u(8)">Cornbread</button>
+        <button class="B8" onclick="u(9)">Butter</button>
+        <button class="B8" onclick="u(10)">Strawberry Jam</button>
+        <button class="B8" onclick="u(11)">Grape Jelly</button>
+        <button class="B8" onclick="u(12)">Margarine</button>
+        <button class="B8" onclick="u(13)">Honey</button>
+      </div>
+      <div>
+        <h2>Spreads</h2>
+        <p>All breads need something to go with. We prefer spreadables, since
+          they become more useful with more DPS!</p></div>
       <script>
-        var slideIndex = 0;
-        carousel();
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("picsrc");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > x.length) {slideIndex = 1}
-          x[slideIndex-1].style.display = "block";
-          setTimeout(carousel, 4000);
-        }
-      </script>
-    </div>
-    <div class="desc">
-     		<h2 class="desctitle">Description</h2>
+        var l = 1;
+        p(l);
+        function u(n){p(l = n);}
+        function p(n){
+          var i;var x = document.getElementsByClassName("B9");
+          var dots = document.getElementsByClassName("B8");
+          if (n > x.length){l = 1}
+          if (n < 1){l = x.length}
+          for (i = 0; i < x.length; i++){x[i].style.display = "none";}
+          for (i = 0; i < dots.length; i++){dots[i].className = dots[i].className.replace(" but", "");}
+          x[l-1].style.display = "block";dots[l-1].className += " but";}</script>
+    <header class="A10">
+      <table class="A12">
+      	<tr>
+          <td class="A0">
+            <img class="A1" src="r/i/logopointer.svg"/>
+            <p class="A2">v1.6.7</p>
+            <p class="A3">Bread Clicker</p></td>
+      		<td><a href="home.html" target="_self" class="A7">Home</a></td>
+      		<td><a href="wiki.html" target="_self" class="A6">Wiki</a></td>
+      		<td><a href="discuss.html" target="_self" class="A7">Discuss</a></td>
+      		<td><a href="updates.html" target="_self" class="A7">Updates</a></td>
+      		<td><a href="signin.html" class="A8">Log In</a></td>
+        	<td><a href="signin.html" class="A9">Register</a></td>
+          <td class="A5">
+            <img class="A4" src="r/i/baker.png">
+            <img class="A4" src="r/i/bakery.png">
+            <img class="A4" src="r/i/cornbread.png">
+            <img class="A4" src="r/i/croissant.png">
+            <img class="A4" src="r/i/gingerbread.png">
+            <img class="A4" src="r/i/grapejelly.png">
+            <img class="A4" src="r/i/honey.png">
+            <img class="A4" src="r/i/margarine.png">
+            <img class="A4" src="r/i/oven.png">
+            <img class="A4" src="r/i/plainbread.png">
+            <img class="A4" src="r/i/pumpkinbread.png">
+            <img class="A4" src="r/i/roll.png">
+            <img class="A4" src="r/i/sourdough.png">
+            <img class="A4" src="r/i/strawberryjam.png">
+            <img class="A4" src="r/i/toaster.png">
+            <img class="A4" src="r/i/wheatfarm.png">
+            <img class="A4" src="r/i/wholewheat.png">
+            <script>
+              var slideIndex = 0;
+              carousel();
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("A4");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 4000);
+              }
+            </script></td>
+        </tr>
+      </table>
+    </header>
+    <!--Description section-->
+    <div>
+     		<h2>Description</h2>
         <h3>Welcome to Bread Clicker!</h3>
-        <p>Create your bread empire by making dough!
-        How do you do this, you may ask? Well, just click on the bread in the
-        middle to start making dough. Click. Click some more. Tired, aren't
-        you? Have some help! Either upgrade your bread, buy spreads, or get
-        an upgrade. Let's explore your options.</p>
+          <p>
+            Create your bread empire by making dough! How do you do this, you may
+            ask? Well, just click on the bread in the middle to start making dough.
+            Click. Click some more. Tired, aren't you? Have some help! Either
+            upgrade your bread, buy spreads, or get an upgrade. Let's explore your options.</p>
         <h3>Buy Breads</h3>
-        	<p>Up your game with a two-in-one package along with a shiny new look
+        	<p>
+            Up your game with a two-in-one package along with a shiny new look
             to your bread! It increases your DPS, or Dough Per Second. It will
-            also increase your DPC, or Dough Per Click. Very simple stuff.
-          </p>
+            also increase your DPC, or Dough Per Click. Very simple stuff.</p>
         <h3>Buy Spreads</h3>
-           <p>Increase your DPS by filling your collection with sweet and savory
-            spreads! These make every other DPS purchase a little more valuable.
-          </p>
+           <p>
+             Increase your DPS by filling your collection with sweet and savory
+             spreads! These make every other DPS purchase a little more valuable.</p>
         <h3>Buy Upgrades</h3>
-          <p>Increase your DPS by having bread being made for you! You can
+          <p>
+            Increase your DPS by having bread being made for you! You can
             purchase appliances, people, businesses, and plots of land to increase
             your DPS earnings. Upgrades can be bought multiple times as well! The
-            only limit is how much money you have.
-        	</p>
+            only limit is how much money you have.</p>
         <h3>Buy Backgrounds</h3>
           <p>Background info is coming soon!</p>
-        <h3>
         <h3>Extra Info and Credits</h3>
-          <p>Scratch Demo Version: Most of the images were found via Google Search,
+          <p>
+            Scratch Demo Version: Most of the images were found via Google Search,
             though some from other sources. Baker and Bakery: Scribblenauts.
             Sound effects, Strawberry Jam and Honey: Scratch library. Icing: Club
             Penguin. Sources and links will be available soon. Background music
-            composed/arranged by Zakk Volk along with the website. Game and mechanics
-            developed by ().
-          </p>
-      	</div>
+            and website by Zakk Volk. Game and mechanics developed by Rylan Byer.</p>
     </div>
-    <button class="collapsible">Breads</button>
-    <div class="content">
-      <div class="bread0">
-        <h3 class="brd0nm">
-          Basic Bread
-        </h3>
-        <p class="brd0ds">
-          Your everyday type of bread. Goes well with ham and cheese, but can
-          be used for just about everything. Gives you 1 DPC and 0 DPS. Comes
-          free with game.
-        </p>
-      </div>
-      <div class="bread1">
-        <h3 class="brd1nm">
-          Roll
-        </h3>
-        <p class="brd1ds">
-          "I'm on a ROLL!!! Hahahaha!" For the more adventurous. In the shape
-          of a hemisphere. Line down the middle for your spreads, like butter.
-          Gives you 2 DPC and +0.1 DPS. Costs 50 dough.
-        </p>
-      </div>
-      <div class="bread2">
-        <h3 class="brd2nm">
-          Whole Wheat
-        </h3>
-        <p class="brd2ds">
-          "Not to be confuse for Hole Wheat, Whole Heat, or Hole Heat"
-          Definitely delicious and healthy. Full of your necessary calories,
-          carbs, and fiber to get you through the struggles life. Gives you 3
-          DPC and +0.4 DPS. Costs 250 dough.
-        </p>
-      </div>
-      <div class="bread3">
-        <h3 class="brd3nm">
-          Sourdough
-        </h3>
-        <p class="brd3ds">
-          "It's not even tart." Not fantastically sour, but whoever made the
-          crosses on top gets their 5-star review from me. Gives you 4 DPC and
-          +0.5 DPS. Costs 500 dough.
-        </p>
-      </div>
-      <div class="bread4">
-        <h3 class="brd4nm">
-          Baguette
-        </h3>
-        <p class="brd4ds">
-          "HONHONHON OUI OUI BAGUETTE" French delicacy. It can be used to knock
-          somebody out, I'll give 'em that. How are you supposed to eat these?
-          Gives you 5 DPC and +1 DPS. Costs 2500 dough.
-        </p>
-      </div>
-      <div class="bread5">
-        <h3 class="brd5nm">
-          Croissant
-        </h3>
-        <p class="brd5ds">
-          "Only the French truly know how to spell corantsanant" Hard to spell,
-          easy to pronounce. Cwa-sawn. By the way, are you gonna finish that
-          croissant? Gives you 6 DPC and +1 DPS. Costs 5000 dough.
-        </p>
-      </div>
-      <div class="bread6">
-        <h3 class="brd6nm">
-          Banana Bread
-        </h3>
-        <p class="brd6ds">
-          "A fan favorite, but not a flan favorite" Butter it, don't bother
-          toasting it! This fruity delight will set you ahead of the game with
-          its stats. It will set you back with its price though! (Tax not
-          included) Gives you 8 DPC and +2 DPS. Costs 10000 dough.
-        </p>
-      </div>
-      <div class="bread7">
-        <h3 class="brd6nm">
-          Cornbread
-        </h3>
-        <p class="brd6ds">
-          "Can also be a muffin." Made from corn, and it is delicious with as
-          much butter as you can fit onto it. Makes you feel poor though. Gives
-          you 12 DPC and +2 DPS. Costs 50000 dough.
-        </p>
-      </div>
-      <h2 class="sbreadtitle">
-        Seasonal Breads
-      </h2>
-      <div class="brdoct">
-        <h3 class="brdoctnm">
-          Pumpkin Bread
-        </h3>
-        <p class="brdoctds">
-          "Honestly just the Halloween bread because of jack-o-lanterns."
-          Tastes good only once a year. Will probably end up feeling sad after
-          consuming a whole loaf. I speak from personal experience. Gives you
-          10 DPC and +2 DPS. Costs 25000 dough.
-        </p>
-      </div>
-      <div class="brdnov">
-        <h3 class="brdnovnm">
-          Thanksgiving Biscuit
-        </h3>
-        <p class="brdnovds">
-          "Not the English kind, the American kind." The pilgrims probably
-          didn't have these at the first Thanksgiving. They're warm and flaky
-          like a microwaved bowl of cereal. Gives you 10 DPC and +2 DPS. Costs
-          25000 dough.
-        </p>
-      </div>
-      <div class="brddec">
-        <h3 class="brddecnm">
-          Gingerbread
-        </h3>
-        <p class="brddecds">
-          "Not to be confused with the cookie, gingerbread cakes are a sweet
-          bread made with ginger." It's the gingerbread man! Honestly the
-          flavor isn't too much to brag about, but still pretty good. Gives you
-          10 DPC and +2 DPS. Costs 25000 dough.
-        </p>
-      </div>
-    </div>
-    <button class="collapsible">Spreads</button>
-    <div class="content">
-	  <div class="spread0">
+    <div>
+	    <div class="spread0">
         <h3 class="sprd0nm">
           None
         </h3>
@@ -487,51 +371,49 @@
         </p>
       </div>
     </div>
-    <button class="collapsible">Upgrades</button>
-    <div class="content">
-      <div>
-        <div class="upg0">
-        <h3 class="upg0nm">
-          None
+    <div>
+      <div class="upg0">
+          <h3 class="upg0nm">
+            None
+          </h3>
+          <p class="upg0ds">
+            It's just you, my friend. Gives you nothing, just like nothing gives
+            you.
+          </p>
+        </div>
+      <div class="upg1">
+        <h3 class="upg1nm">
+          Toaster
         </h3>
-        <p class="upg0ds">
-          It's just you, my friend. Gives you nothing, just like nothing gives
-          you.
+        <p class="upg1ds">
+          "Not what I had in mind, but ok." Making bread hard since the 20th
+          century. Gives you 0.1 DPS every time you click it. Base price is 25
+          dough. Increases by 1/3 price each time.
         </p>
       </div>
-        <div class="upg1">
-          <h3 class="upg1nm">
-            Toaster
-          </h3>
-      <p class="upg1ds">
-        "Not what I had in mind, but ok." Making bread hard since the 20th
-        century. Gives you 0.1 DPS every time you click it. Base price is 25
-        dough. Increases by 1/3 price each time.
-      </p>
-    </div>
-        <div class="upg2">
-      <h3 class="upg2nm">
-        Oven
-      </h3>
-      <p class="upg2ds">
-        "You bake bread in ovens!" These boxes of hot are sure nice for
-        baking bread and suffocating Hillary Clinton. Gives you 0.5 DPS every
-        time you click it. Base price is 100 dough. Increases by 1/3 price
-        each time.
-      </p>
-    </div>
-        <div class="upg3">
-      <h3 class="upg3nm">
-        Baker
-      </h3>
-      <p class="upg3ds">
-        "A nice baker to bake some bread" Indeed. His hair really sells it.
-        He is a good baker who has been yelled at by Gordon Ramsay at least
-        six times on live television. Gives you 1 DPS every time you click
-        it. Base price is 500 dough. Increases by 1/3 price each time.
-      </p>
-    </div>
-        <div class="upg4">
+      <div class="upg2">
+        <h3 class="upg2nm">
+          Oven
+        </h3>
+        <p class="upg2ds">
+          "You bake bread in ovens!" These boxes of hot are sure nice for
+          baking bread and suffocating Hillary Clinton. Gives you 0.5 DPS every
+          time you click it. Base price is 100 dough. Increases by 1/3 price
+          each time.
+        </p>
+      </div>
+      <div class="upg3">
+        <h3 class="upg3nm">
+          Baker
+        </h3>
+        <p class="upg3ds">
+          "A nice baker to bake some bread" Indeed. His hair really sells it.
+          He is a good baker who has been yelled at by Gordon Ramsay at least
+          six times on live television. Gives you 1 DPS every time you click
+          it. Base price is 500 dough. Increases by 1/3 price each time.
+        </p>
+      </div>
+      <div class="upg4">
         <h3 class="upg4nm">
           Bakery
         </h3>
@@ -541,8 +423,8 @@
           Gives you 2 DPS every time you click it. Base price is 2500 dough.
           Increases by 1/3 price each time.
         </p>
-    </div>
-    <div class="upg5">
+      </div>
+      <div class="upg5">
       <h3 class="upg5nm">
         Wheat Farm
       </h3>
@@ -553,32 +435,32 @@
         price is 10000 dough. Increases by 1/3 price each time.
       </p>
     </div>
-    <div class="upg6">
-      <h3 class="upg6nm">
-        Hand Mixer
-      </h3>
-      <p class="upg6ds">
-        "Not too powerful, but you could change that..." It's fantastic for
-        quickly whipping eggs, thin batter, or terrorizing the house pet.
-        Gives you 10 DPS every time you click it. Base price is 50000 dough.
-        Increases by 1/3 price each time.
-      </p>
+      <div class="upg6">
+        <h3 class="upg6nm">
+          Hand Mixer
+        </h3>
+        <p class="upg6ds">
+          "Not too powerful, but you could change that..." It's fantastic for
+          quickly whipping eggs, thin batter, or terrorizing the house pet.
+          Gives you 10 DPS every time you click it. Base price is 50000 dough.
+          Increases by 1/3 price each time.
+        </p>
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
     </div>
   </div>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
   </body>
 </html>

@@ -27,220 +27,79 @@
       }
     </script>
     <style>
-      body {
-        background-color:#ffe1a3;
-      }
-      .login {
-        position:relative;
-        top:80px;
-        width: 40%;
-        height:auto;
-        float: left;
-        padding: 30px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: black;
-        box-shadow: 0px 0px 2px #624401;
-      }
-      .register {
-        position:relative;
-        top:80px;
-        width: 40%;
-        height:auto;
-        float: right;
-        padding: 30px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: black;
-        box-shadow: 0px 0px 2px #624401;
-      }
-      @font-face {
-        font-family:VCSans;
-        src: url('resources/fonts/ViceCitySans.otf');
-      }
-      @font-face {
-        font-family:TinBird;
-        src: url('resources/fonts/TinBird.ttf');
-      }
-      @font-face {
-        font-family:GoodDog;
-        src: url('resources/fonts/gooddog.ttf');
-      }
-      @keyframes fading{
-        0%{
-          opacity:0
-        }
-        25% {
-          opacity:1
-        }
-        80%{
-          opacity:1
-        }
-        100%{
-          opacity:0
-        }
-      }
-      .logo {
-        width:250px;
-        height:70px;
-      }
-      .logotitle {
-        position:absolute;
-        top:-30%;
-        left:3.75%;
-        font-family: GoodDog;
-        color:black;
-        font-size:32.5pt;
-      }
-      .logoversion {
-        position:absolute;
-        top:55%;
-        left:4.3%;
-        font-family: monospace;
-        color:black;
-        font-size: 8pt;
-        font-weight:900;
-      }
-      .logopointer {
-        position:absolute;
-        top:48%;
-        left:2.8%;
-        height:40px;
-        width:auto;
-      }
-      .picsrc {
-        animation-name:fading;
-        animation-duration:4s;
-        animation-iteration-count:infinite;
-        height:60px;
-        width:65px;
-      }
-      .picgen {
-        position:absolute;
-        top: 5%;
-        left: 0.2%;
-        z-index:-1;
-        padding:5px;
-        width:10%;
-      }
-      .navigation {
-        background-color: #624401;
-        padding:5px;
-        width:2000px;
-        height:70px;
-        position:fixed;
-        top:0px;
-        left:0px;
-      }
-      .tabs a:visited {
-        text-decoration: none;
-      }
-      .tabs a:link {
-        text-decoration: none;
-      }
-      .realtab {
-        color:#fff;
-        font-family: VCSans, Arial, sans-serif;
-        font-size: 18pt;
-        margin:10px;
-      }
-      body {
-        background-color: #ffe1a3;
-        overflow-x:scroll;
-        overflow-y:scroll;
-      }
-      h1, h2 {
-        font-family: VCSans, Arial, sans-serif;
-        color:black;
-      }
-      h3, p {
-        font-family: TinBird, Arial, sans-serif;
-        color:black;
-      }
-      input[type=email], input[type=password] {
-        width: 100%;
-        height: 30px;
-        padding: 12px 20px;
-        margin: 8px 0;
-        font-family:TinBird;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-      }
-      .pswvalid {
-        font-size:10pt;
-      }
-      label {
-        font-family:VCSans;
-      }
-      button {
-        background-color: #17d;
-        color: white;
-        font-family:TinBird;
-        font-size:14pt;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-      }
-      button:hover {
-        opacity: 0.8;
-      }
-      .imgcontainer {
-        text-align: center;
-        margin: 24px 0 12px 0;
-      }
-      .silogo {
-        width: 80%;
-      }
-      .container {
-        padding: 10px;
-      }
-      @media screen and (max-width: 300px) {
-        span.psw {
-          display: block;
-          float: none;
-        }
-      }
+      @font-face{font-family:h;src:url('r/f/h.otf')}
+      @font-face{font-family:t;src:url('r/f/t.ttf')}
+      @font-face{font-family:l;src:url('r/f/l.ttf')}
+      @keyframes f{0%,100%{opacity:0}25%,80%{opacity:1}}
+      .A0{width:250px;height:70px}
+      .A1{position:absolute;top:48%;left:2.8%;height:40px;width:auto}
+      .A2{position:absolute;top:55%;left:4.3%;font:900 8pt monospace}
+      .A3{position:absolute;top:-30%;left:3.75%;font:32.5pt l}
+      .A4{animation:f 4s infinite;height:60px;width:65px}
+      .A5{position:absolute;top:5%;left:0.2%;z-index:-1;padding:5px;width:10%}
+      .A6{color:#999;font:18pt h;margin:10px;pointer-events:none;cursor:default}
+      .A7{color:#fff;font:18pt h;margin:10px}
+      .A8{background-color:#ddd;text-decoration:none;font:18pt h;border:5px solid#ddd;color:#000}
+      .A9{background-color:#17d;text-decoration:none;font:18pt h;border:5px solid#17d;color:#fff}
+      .A10{background-color:#640;padding:5px;width:2000px;height:70px;position:fixed;top:0px;left:0px}
+      .A11{background-color:#fda;padding:80px}
+      .A12 a:visited,a:link{text-decoration:none}
+      h1,h2{font-family:h}
+      h3,p{font-family:t;text-align:justify}
+      .login,.register{position:relative;top:80px;width:40%;height:auto;padding:30px;border:2px solid #640}
+      .login{float:left}
+      .register{float:right}
+      input[type=email],input[type=password]{
+        width:100%;height:30px;padding: 12px 20px;margin:8px 0;
+        font-family:t;display:inline-block;border:1px solid #ccc;box-sizing:border-box;}
+      .pswvalid{font-size:10pt;}
+      label{font-family:h;}
+      button{background:#17d;color:#fff;font:14pt t;padding:20px;margin:8px 0;border:none;cursor:pointer;width:100%}
+      button:hover{opacity: 0.8;}
+      .imgcontainer {text-align:center;margin: 24px 0 12px 0}
+      .silogo {width:80%}
+      .container {padding:10px}
+      @media screen and (max-width: 300px){span.psw {display:block;float:none}}
     </style>
   </head>
-  <body>
-    <header class="navigation">
-      <table class="tabs">
+  <body class="A11">
+    <header class="A10">
+      <table class="A12">
         <tr>
-          <td class="logo">
-            <p class="logotitle">Bread Clicker</p>
-            <p class="logoversion">v1.6.7</p>
-            <img class="logopointer" src="resources/images/logopointer.svg"/></td>
-          <td><a href="home.html" target="_self" class="realtab">Home</a></td>
-          <td><a href="wiki.html" target="_self" class="realtab">Wiki</a></td>
-          <td><a href="discuss.html" target="_self" class="realtab">Discuss</a></td>
-          <td><a href="updates.html" target="_self" class="realtab">Updates</a></td>
-          <td><div class="picgen">
-            <img class="picsrc" src="resources/images/baker.png">
-            <img class="picsrc" src="resources/images/bakery.png">
-            <img class="picsrc" src="resources/images/cornbread.png">
-            <img class="picsrc" src="resources/images/croissant.png">
-            <img class="picsrc" src="resources/images/gingerbread.png">
-            <img class="picsrc" src="resources/images/grapejelly.png">
-            <img class="picsrc" src="resources/images/honey.png">
-            <img class="picsrc" src="resources/images/margarine.png">
-            <img class="picsrc" src="resources/images/oven.png">
-            <img class="picsrc" src="resources/images/plainbread.png">
-            <img class="picsrc" src="resources/images/pumpkinbread.png">
-            <img class="picsrc" src="resources/images/roll.png">
-            <img class="picsrc" src="resources/images/sourdough.png">
-            <img class="picsrc" src="resources/images/strawberryjam.png">
-            <img class="picsrc" src="resources/images/toaster.png">
-            <img class="picsrc" src="resources/images/wheatfarm.png">
-            <img class="picsrc" src="resources/images/wholewheat.png">
+          <td class="A0">
+            <img class="A1" src="r/i/logopointer.svg"/>
+            <p class="A2">v1.6.7</p>
+            <p class="A3">Bread Clicker</p></td>
+          <td><a href="home.html" target="_blank" class="A6">Home</a></td>
+          <td><a href="wiki.html" target="_blank" class="A7">Wiki</a></td>
+          <td><a href="discuss.html" target="_blank" class="A7">Discuss</a></td>
+          <td><a href="updates.html" target="_blank" class="A7">Updates</a></td>
+          <td><a href="signin.html" class="A8">Log In</a></td>
+          <td><a href="signin.html" class="A9">Register</a></td>
+          <td class="A5">
+            <img class="A4" src="r/i/baker.png">
+            <img class="A4" src="r/i/bakery.png">
+            <img class="A4" src="r/i/cornbread.png">
+            <img class="A4" src="r/i/croissant.png">
+            <img class="A4" src="r/i/gingerbread.png">
+            <img class="A4" src="r/i/grapejelly.png">
+            <img class="A4" src="r/i/honey.png">
+            <img class="A4" src="r/i/margarine.png">
+            <img class="A4" src="r/i/oven.png">
+            <img class="A4" src="r/i/plainbread.png">
+            <img class="A4" src="r/i/pumpkinbread.png">
+            <img class="A4" src="r/i/roll.png">
+            <img class="A4" src="r/i/sourdough.png">
+            <img class="A4" src="r/i/strawberryjam.png">
+            <img class="A4" src="r/i/toaster.png">
+            <img class="A4" src="r/i/wheatfarm.png">
+            <img class="A4" src="r/i/wholewheat.png">
             <script>
               var slideIndex = 0;
               carousel();
               function carousel() {
                 var i;
-                var x = document.getElementsByClassName("picsrc");
+                var x = document.getElementsByClassName("A4");
                 for (i = 0; i < x.length; i++) {
                   x[i].style.display = "none";
                 }
@@ -249,16 +108,15 @@
                 x[slideIndex-1].style.display = "block";
                 setTimeout(carousel, 4000);
               }
-            </script>
-          </div></td>
+            </script></td>
         </tr>
-      </table class="tabs">
+      </table>
     </header>
     <div class="login">
       <form action="home.html" method="post">
         <p style="color:red;">The following forms are NOT functional! They are for testing and debugging purposes.</p>
         <div class="imgcontainer">
-          <img src="resources/images/bclogo1.png" class="silogo">
+          <img src="r/i/bclogo1.png" class="silogo">
         </div>
         <div class="container">
           <label for="uname"><b>Email</b></label>
