@@ -1,4 +1,5 @@
 https://www.breadclicker.net/home.html
 https://www.breadclicker.net/wiki.html
-https://www.breadclicker.net/discuss.html
+https://www.breadclicker.net/news.html
 https://www.breadclicker.net/updates.html
+https://www.breadclicker.net/signin.html
