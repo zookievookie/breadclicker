@@ -1,0 +1,31 @@
+when game started
+	set size to full
+	disp stats
+	switch clicker sprite to bread
+	set nospreads to true
+	set dough to 0
+	set dpc to 1
+	set base dps to 0
+	set dps to 0
+	set breadno to 1
+	bread go to 0,0
+	set wron to true
+	forever set dps to (Base DPS+(Spread%*(0.01*base dps)))
+	forever set brightness effect to ((brightness-50)/4)
+	forever if dps not 0, wait 1/dps seconds and change dough by 1
+	play random music and set volume to sound var
+when bread bought
+	set breadno to x
+	change dough by price
+	switch sprite to bread
+	change dpc by x
+	change base dps by x
+when seasonal bread bought
+	set breadno to x
+	change dough by x
+	switch sprite to Month
+when bread clicked
+	change dough by dpc
+	play click sfx
+	set size to full
+	grow for x seconds and return to full size

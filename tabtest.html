@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			.tab {overflow:hidden;border: 1px solid #ccc;background-color: #f1f1f1;}
+			.tab button {float:left;border:none;outline:none;cursor:pointer;padding:10px;}
+			.tab button.active {background-color: #ccc;}
+			.tabcontent {display: none;padding:10px}
+		</style>
+	</head>
+	<body>
+		<div class="tab">
+		  <button class="D1" onclick="openCity(event, 'London')" id="nO">London</button>
+		  <button class="D1" onclick="openCity(event, 'Paris')">Paris</button>
+		  <button class="D1" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+		</div>
+		<div id="London" class="D2">
+		  <h3>London</h3>
+		  <p>London is the capital city of England.</p>
+		</div>
+		<div id="Paris" class="D2">
+		  <h3>Paris</h3>
+		  <p>Paris is the capital of France.</p>
+		</div>
+		<div id="Tokyo" class="D2">
+		  <h3>Tokyo</h3>
+		  <p>Tokyo is the capital of Japan.</p>
+		</div>
+		<script>
+			document.getElementById("nO").click();
+			function openCity(evt, cityName) {var i, tc, tl;tc = document.getElementsByClassName("D2");
+				for (i = 0; i < tc.length; i++) {tc[i].style.display = "none";}
+			  tl = document.getElementsByClassName("D1");
+			  for (i = 0; i < tl.length; i++) {tl[i].className = tl[i].className.replace(" active", "");}
+			  document.getElementById(cityName).style.display = "block";evt.currentTarget.className += " active";}
+		</script>
+	</body>
+</html>
