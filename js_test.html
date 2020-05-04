@@ -154,13 +154,11 @@
         <script>
           var dpc = 1;
           var dps = 3;
-          var dough = getCookie("dough");
-          
+          var dough = 0;
           function startGame(){
             document.getElementById("doughnum").innerHTML = (dps + dough);
             dough += dps;
             document.getElementById("dpsnum").innerHTML = dps;
-            document.cookie = "dough="dough;
           }
           function clicked() {
             var dpc = 1;
