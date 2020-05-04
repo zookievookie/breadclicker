@@ -23,33 +23,84 @@
       .A7{color:#fff;font:18pt h;margin:10px}
       .A8{background-color:#ddd;text-decoration:none;font:18pt h;border:5px solid#ddd;color:#000;margin-left:44vw;}
       .A9{background-color:#17d;text-decoration:none;font:18pt h;border:5px solid#17d;color:#fff;}
-      .A10{background-color:#640;padding:5px;width:2000px;height:70px;position:fixed;top:0px;left:0px}
+      .A10{background-color:#640;padding:5px;width:2000px;height:70px;position:fixed;top:0px;left:0px;z-index:5;}
       .A11{background-color:#fda;padding:80px}
       .A12 a:visited,a:link{text-decoration:none}
       h1,h2{font-family:h}
-      h3,p{font-family:t;text-align:justify}
-      /*End Standard Document Rules*/
-      button{font-family:h;}
-      .filler{color:#640;margin-left:270px}
-      .desc {width:85%;margin-right:50px}
+      h3,p{font-family:t;text-align:justify;}
+      h4{font-family:h;display:inline-block;}
       .B3{padding:50px;display:inline-block;}
-      .B9{position:relative;top:20px;display:inline;width:60%;margin:0 auto;height:35vh}
-      .but{color:#fff!important;background-color:#00f!important}
-      button{border:none;padding:10px;margin-bottom:5px;cursor:pointer;width:auto}
+      .B9{position:relative;top:10px;display:inline;width:60%;margin:0 auto;height:35vh}
+      .but{border:2px black inset;outline:none;}
+      button{font-family:h;border:none;padding:10px;cursor:pointer;width:auto;outline:none;}
       .slt{display:inline;float:right;width:60%;font-size:12pt}
-      .slp{height:70%;display:inline;float:left}
+      .slp{height:70%;display:inline;float:left;z-index:-2;}
       span{font-weight:bold;color:green}
       .si{width:40px;}
       .social{position:relative;left:43vw;}
+      .opt{vertical-align:bottom;}
     </style>
   </head>
   <body class="A11">
-    <!--bread slideshow-->
+    <header class="A10">
+      <table class="A12">
+        <tr>
+          <td class="A0">
+              <img class="A1" src="i/logopointer.svg"/>
+              <p class="A2">v1.8 - 1 Year Anniversary!</p>
+              <p class="A3">Bread Clicker</p></td>
+            <td><a href="index.html" target="_blank" class="A7">Home</a></td>
+            <td><a href="wiki.html" class="A6">Wiki</a></td>
+            <td class="social">
+              <a href="https://www.instagram.com/breadclicker" target="_blank"><img class="si" src="i/insta.png"></a>
+              <a href="https://www.discord.gg/Ywksydr" target="_blank"><img class="si" src="i/discord.png"></a></td>
+            <td><a href="signin.html" class="A8">Log In</a></td>
+            <td><a href="signin.html" class="A9">Register</a></td>
+            <td class="A5">
+              <img class="A4" src="i/plainbread.png">
+              <img class="A4" src="i/breadbasket.png">
+              <img class="A4" src="i/toaster.png">
+              <img class="A4" src="i/baker.png">
+              <img class="A4" src="i/handmixer.png">
+              <img class="A4" src="i/gravy.png">
+              <img class="A4" src="i/sourdough.png">
+              <img class="A4" src="i/bakery.png">
+              <img class="A4" src="i/pumpkinbread.png">
+              <img class="A4" src="i/oven.png">
+              <img class="A4" src="i/icing.png">
+              <img class="A4" src="i/butter.png">
+              <img class="A4" src="i/croissant.png">
+              <img class="A4" src="i/cornbread.png">
+              <img class="A4" src="i/honey.png">
+              <img class="A4" src="i/grapejelly.png">
+              <img class="A4" src="i/gingerbread.png">
+              <img class="A4" src="i/bananabread.png">
+              <img class="A4" src="i/baguette.png">
+              <img class="A4" src="i/strawberryjam.png">
+              <img class="A4" src="i/margarine.png">
+              <img class="A4" src="i/roll.png">
+              <img class="A4" src="i/wheatfarm.png">
+              <img class="A4" src="i/wholewheat.png">
+              <script>
+                  var slideIndex = 0;
+                 carousel();
+                  function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("A4");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                   }
+                    slideIndex++;
+                   if (slideIndex > x.length) {slideIndex = 1}
+                   x[slideIndex-1].style.display = "block";
+                   setTimeout(carousel, 4000);}</script></td>
+        </tr>
+      </table>
+    </header> 
     <div>
-      <!--Title and Description, Slides, and Buttons-->
       <div class="B3">
         <div class="B9">
-          <img class="slp" src="i/plainbread.png" />
+          <img class="slp" src="i/plainbread.png">
           <h3 class="slt">
             The original bread of Bread Clicker! White bread is the right bread,
             said John Adams I think. Your everyday type of bread. Goes well with
@@ -57,7 +108,7 @@
             <span>1 DPC.</span>
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/roll.png" />
+          <img class="slp" src="i/roll.png">
           <h3 class="slt">
             Being the first purchase you could make in the game, the roll is a
             classic bread sporting a nice round shape that was added on March 25,
@@ -67,7 +118,7 @@
             +0.1 DPS</span>. Costs <span>50 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/wholewheat.png" />
+          <img class="slp" src="i/wholewheat.png">
           <h3 class="slt">
             This tasty treat originates back to March 26, 2019 when it was added
             along with the DPS counter and World Record display in update 0.1.2.5.
@@ -77,7 +128,7 @@
             and <span>+0.4 DPS</span>. Costs <span>250 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/sourdough.png" />
+          <img class="slp" src="i/sourdough.png">
           <h3 class="slt">
             A fine addition to the bread basket, sourdough was released on April
             3, 2019 in update 0.4. "It's not even tart." Not fantastically sour,
@@ -86,7 +137,7 @@
             dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/baguette.png" />
+          <img class="slp" src="i/baguette.png">
           <h3 class="slt">
             The longest bread currently available. It was released on April 16,
             2019 in update 0.8. "HONHONHON OUI OUI BAGUETTE" French delicacy. It
@@ -95,7 +146,7 @@
             +1 DPS</span>. Costs <span>2500 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/croissant.png" />
+          <img class="slp" src="i/croissant.png">
           <h3 class="slt">
             Another french delicacy added to the menu on April 25, 2019 in update
             0.9.9. "Only the French truly know how to spell corantsanant" Hard to
@@ -104,7 +155,7 @@
             Costs <span>5000 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/bananabread.png" />
+          <img class="slp" src="i/bananabread.png">
           <h3 class="slt">
             At the full release of Bread Clicker 1.0 on April 27, 2019, the classic
             fruity bread, banana bread, was added to the game. "A fan favorite,
@@ -114,16 +165,64 @@
             8 DPC</span> and <span>+2 DPS</span>. Costs <span>10000 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/cornbread.png" />
+          <img class="slp" src="i/cornbread.png">
           <h3 class="slt">
             The breads keep getting more diverse, but cornbread, added on October
             29, 2019 in update 1.3.7, takes it to a new level. "Can also be a muffin."
             Made from corn, and it is delicious with as much butter as you can
             fit onto it. Makes you feel poor though. Gives you <span>12 DPC</span>
             and <span>+2 DPS</span>. Costs <span>50000 dough</span>.
-          </h3></div></div>
+          </h3></div>
         <div class="B9">
-          <img class="slp" src="i/butter.png" />
+          <img class="slp" src="i/pumpkinbread.png">
+          <h3 class="slt">
+            After the return of our developers in late autumn, we added the first
+            seasonal bread on October 23, 2019 in update 1.3.0. "Honestly just the 
+            Halloween bread because of jack-o-lanterns." Tastes good only once a year. 
+            Will probably end up feeling sad after consuming a whole loaf. I speak from 
+            personal experience. Gives you <span>10 DPC</span> and <span>+2 DPS</span>. 
+            Costs <span>25000 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="i/biscuit.png">
+          <h3 class="slt">
+            Following the tradition of monthly breads, we introduced the thanksgiving
+            biscuit on November 1, 2019 in update 1.4.0. "Not the English kind, the 
+            American kind." Tastes good only once a year. The pilgrims probably didn't 
+            have these at the first Thanksgiving. They're warm and flaky like a microwaved 
+            bowl of cereal. Gives you <span>10 DPC</span> and <span>+2 DPS</span>. Costs 
+            <span>25000 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="i/gingerbread.png">
+          <h3 class="slt">
+            The old classic gingerbread house tradition, typically done in December,
+            became the seasonal bread in December of 2019 in an unknown update. "Not 
+            to be confused with the cookie, gingerbread cakes are a sweet bread made 
+            with ginger." It's the gingerbread man! Honestly the flavor isn't too much 
+            to brag about, but still pretty good. Gives you <span>10 DPC</span> and 
+            <span>+2 DPS</span>. Costs <span>25000 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="i/garlicbread.png">
+          <h3 class="slt">
+            A long needed addition to Bread Clicker, garlic bread was added to the game 
+            in January of 2019 in an unknown update. "Garlic Cheese Bread: You can't go 
+            wrong with this!" Mmm, I can smell it from miles away! I'd imagine it goes
+            great with a lot of dishes. Gives you <span>10 DPC</span> and <span>+2 DPS</span>. 
+            Costs <span>25000 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="i/pixelbread.png">
+          <h3 class="slt">
+            To celebrate 1 year of Bread Clicker, we offer a pixelated bread
+            available for the whole month of March. "An old-school piece of 
+            bread to celebrate 1 year of Bread Clicker!" It's just a little bit
+            crunchier than the original bread it represents. Gives you <span>
+            10 DPC</span> and <span>+2 DPS</span>. Costs <span>25000 dough</span>.
+          </h3></div>
+        <div class="B9">
+          <img class="slp" src="i/butter.png">
           <h3 class="slt">
             A super tasty and original classic that you just can't pass up on!
             This was the first spread that was placed into the game on April 2,
@@ -132,7 +231,7 @@
             grocery store or in-game. Gives you <span>1% bonus on DPS</span>.
             Costs <span>100 dough</span>.</h3></div>
         <div class="B9">
-          <img class="slp" src="i/strawberryjam.png" />
+          <img class="slp" src="i/strawberryjam.png">
           <h3 class="slt">
             A fruity addition to the game, strawberry jam was the second spread
             first available on April 3, 2019 in update 0.4. "It's not jelly, it's
@@ -141,7 +240,7 @@
             Costs <span>1000 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/grapejelly.png" />
+          <img class="slp" src="i/grapejelly.png">
           <h3 class="slt">
             Half of a PB&J is jelly, and grape jelly has always been the king
             of all jelly. This classic staple food was added on April 10, 2019
@@ -149,7 +248,7 @@
             Gives you <span>2% bonus on DPS</span>. Costs <span>5000 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/margarine.png" />
+          <img class="slp" src="i/margarine.png">
           <h3 class="slt">
             If you are incapable of making lactase, this spread is perfect for you!
             Margarine, the substitute for butter, was added on April 17, 2019
@@ -159,7 +258,7 @@
             Costs <span>10000 dough</span>.
           </h3></div>
         <div class="B9">
-          <img class="slp" src="i/honey.png" />
+          <img class="slp" src="i/honey.png">
           <h3 class="slt">
             The bee is a rather important thing in our food chain, and they produce
             some of the best natural sugars of all insects. Honey was added on November
@@ -167,21 +266,44 @@
             knees. But hey, it doesn't expire! Don't give it to your newborn, it will
             suffocate. Gives you <span>3% bonus on DPS</span>. Costs <span>50000 dough</span>.
       </div>
-      <div>
-        <button onclick="u(1)">Basic Bread</button>
-        <button onclick="u(2)">Roll</button>
-        <button onclick="u(3)">Whole Wheat</button>
-        <button onclick="u(4)">Sourdough</button>
-        <button onclick="u(5)">Baguette</button>
-        <button onclick="u(6)">Croissant</button>
-        <button onclick="u(7)">Banana Bread</button>
-        <button onclick="u(8)">Cornbread</button>
+      <div class="opt">
+        <h4>Breads</h4>
+        <button onclick="u(1)" style="background-color:tomato">Basic Bread</button>
+        <button onclick="u(2)" style="background-color:slateblue">Roll</button>
+        <button onclick="u(3)" style="background-color:gold">Whole Wheat</button>
+        <button onclick="u(4)" style="background-color:seagreen">Sourdough</button>
+        <button onclick="u(5)" style="background-color:sienna">Baguette</button>
+        <button onclick="u(6)" style="background-color:salmon">Croissant</button>
+        <button onclick="u(7)" style="background-color:yellow">Banana Bread</button>
+        <button onclick="u(8)" style="background-color:sandybrown">Cornbread</button>
         <br>
-        <button onclick="u(9)">Butter</button>
-        <button onclick="u(10)">Strawberry Jam</button>
-        <button onclick="u(11)">Grape Jelly</button>
-        <button onclick="u(12)">Margarine</button>
-        <button onclick="u(13)">Honey</button></div>
+        <h4>Seasonal Breads</h4>
+        <button onclick="u(9)" style="background-color:orange">Pumpkin Bread</button>
+        <button onclick="u(10)" style="background-color:saddlebrown">Thanksgiving Biscuit</button>
+        <button onclick="u(11)" style="background-color:red">Gingerbread</button>
+        <button onclick="u(12)" style="background-color:teal">Garlic Bread</button>
+        <button onclick="u(13)" style="background-color:green">Pixel Bread</button>
+        <br>
+        <h4>Spreads</h4>
+        <button onclick="u(14)">Butter</button>
+        <button onclick="u(15)">Strawberry Jam</button>
+        <button onclick="u(16)">Grape Jelly</button>
+        <button onclick="u(17)">Margarine</button>
+        <button onclick="u(18)">Honey</button>
+        <br>
+        <h4>Seasonal Spreads</h4>
+        <button onclick="u(19)">Gravy</button>
+        <button onclick="u(20)">Icing</button>
+        <button onclick="u(21)">Fondue</button>
+        <br>
+        <h4>Upgrades</h4>
+        <button onclick="u(22)">Toaster</button>
+        <button onclick="u(23)">Oven</button>
+        <button onclick="u(24)">Baker</button>
+        <button onclick="u(25)">Bakery</button>
+        <button onclick="u(26)">Wheat Farm</button>
+        <button onclick="u(27)">Hand Mixer</button>
+      </div>
       <script>
         var l = 1;
         p(l);
@@ -195,60 +317,6 @@
           for (i = 0; i < x.length; i++){x[i].style.display = "none";}
           for (i = 0; i < dots.length; i++){dots[i].className = dots[i].className.replace(" but", "");}
           x[l-1].style.display = "block";dots[l-1].className += " but";}</script>
-      <header class="A10">
-      <table class="A12">
-          <tr>
-            <td class="A0">
-                <img class="A1" src="i/logopointer.svg"/>
-                <p class="A2">v1.8 - 1 Year Anniversary!</p>
-                <p class="A3">Bread Clicker</p></td>
-              <td><a href="index.html" target="_blank" class="A7">Home</a></td>
-              <td><a href="wiki.html" class="A6">Wiki</a></td>
-              <td class="social">
-                <a href="https://www.instagram.com/breadclicker" target="_blank"><img class="si" src="i/insta.png"></a>
-                <a href="https://www.discord.gg/Ywksydr" target="_blank"><img class="si" src="i/discord.png"></a></td>
-              <td><a href="signin.html" class="A8">Log In</a></td>
-              <td><a href="signin.html" class="A9">Register</a></td>
-              <td class="A5">
-                <img class="A4" src="i/plainbread.png">
-                <img class="A4" src="i/breadbasket.png">
-                <img class="A4" src="i/toaster.png">
-                <img class="A4" src="i/baker.png">
-                <img class="A4" src="i/handmixer.png">
-                <img class="A4" src="i/gravy.png">
-                <img class="A4" src="i/sourdough.png">
-                <img class="A4" src="i/bakery.png">
-                <img class="A4" src="i/pumpkinbread.png">
-                <img class="A4" src="i/oven.png">
-                <img class="A4" src="i/icing.png">
-                <img class="A4" src="i/butter.png">
-                <img class="A4" src="i/croissant.png">
-                <img class="A4" src="i/cornbread.png">
-                <img class="A4" src="i/honey.png">
-                <img class="A4" src="i/grapejelly.png">
-                <img class="A4" src="i/gingerbread.png">
-                <img class="A4" src="i/bananabread.png">
-                <img class="A4" src="i/baguette.png">
-                <img class="A4" src="i/strawberryjam.png">
-                <img class="A4" src="i/margarine.png">
-                <img class="A4" src="i/roll.png">
-                <img class="A4" src="i/wheatfarm.png">
-                <img class="A4" src="i/wholewheat.png">
-                <script>
-                    var slideIndex = 0;
-                   carousel();
-                    function carousel() {
-                      var i;
-                      var x = document.getElementsByClassName("A4");
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                     }
-                      slideIndex++;
-                     if (slideIndex > x.length) {slideIndex = 1}
-                     x[slideIndex-1].style.display = "block";
-                     setTimeout(carousel, 4000);}</script></td>
-      </div>
-    </header>
       <!--
     <div>
      		<h2>Description</h2>
@@ -382,21 +450,6 @@
           Gives you 10 DPS every time you click it. Base price is 50000 dough.
           Increases by 1/3 price each time.
         </p>
-        <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            }
-          });
-        }
-      </script>
     </div>
   -->
     </div>
