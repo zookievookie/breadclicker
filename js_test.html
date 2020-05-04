@@ -12,28 +12,50 @@
       @font-face{font-family:t;src:url('f/t.ttf')}
       @font-face{font-family:l;src:url('f/l.ttf')}
       @keyframes f{0%,100%{opacity:0}25%,80%{opacity:1}}
+      @keyframes g{0%,90%{transform:translate(0px,0px);opacity:1}92%{transform:translate(0px,-500px);opacity:0}}
       .A0{width:250px;height:70px}
       .A1{position:absolute;top:48%;left:2.8%;height:40px;width:auto}
-      .A2{position:absolute;top:55%;left:4.3%;font:900 8pt monospace}
+      .A2{position:absolute;top:63%;left:4.3%;font:900 8pt monospace}
       .A3{position:absolute;top:-30%;left:3.75%;font:32.5pt l}
       .A4{animation:f 4s infinite;height:60px;width:65px}
       .A5{position:absolute;top:5%;left:0.2%;z-index:-1;padding:5px;width:10%}
       .A6{color:#999;font:18pt h;margin:10px;pointer-events:none;cursor:default}
       .A7{color:#fff;font:18pt h;margin:10px}
-      .A8{background-color:#ddd;text-decoration:none;font:18pt h;border:5px solid#ddd;color:#000}
-      .A9{background-color:#17d;text-decoration:none;font:18pt h;border:5px solid#17d;color:#fff}
-      .A10{background-color:#640;padding:5px;width:100vw;height:10vh;position:fixed;top:0px;left:0px}
-      .A11{background-color:#fda;padding:80px;}
+      .A8{background-color:#ddd;text-decoration:none;font:18pt h;border:5px solid#ddd;color:#000;margin-left:44vw;pointer-events:none;cursor:default}
+      .A9{background-color:#17d;text-decoration:none;font:18pt h;border:5px solid#17d;color:#fff;pointer-events:none;cursor:default}
+      .A10{background-color:#640;padding:5px;width:2000px;height:70px;position:fixed;top:0px;left:0px;z-index:10;}
+      .A11{background-color:#fda;padding:80px}
       .A12 a:visited,a:link{text-decoration:none}
+      .B1{animation:g 7s infinite;border:solid 1px;border-radius:10px;box-shadow:3px 3px;padding:10px;margin-bottom:10px;height:300px;}
+      .B2{font-size:100%}
+      .B3{font-size:9pt;}
+      .B4{font-size:10pt;}
+      .B6{display:block;position:absolute;left:75%;top:100px;right:2%;z-index:-2;}
       h1,h2{font-family:h}
       h3,p{font-family:t;text-align:justify}
+      .game{display:block;margin:0 auto;border:10px solid #640;width:50%;z-index:2!important;height:70vh;}
+      button{font-family:h;}
+      .filler{color:#640;margin-left:270px}
+      .desc {width:85%;margin-right:50px}
+      .B5{padding:50px;height:auto;display:inline-block;border:solid 2px;box-shadow:5px 5px;border-radius:5px}
+      .B9{display:inline;width:60%;margin:0 auto;height:35vh}
+      .but{color:#fff!important;background-color:#00f!important}
+      button{border:none;padding:10px;margin-bottom:5px;cursor:pointer;width:auto}
+      .slt{display:inline;float:right;width:60%;font-size:12pt}
+      .slp{height:70%;display:inline;float:left}
+      span{font-weight:bold;color:green}
+      img{width:40px;}
       body{overflow:hidden;}
-      .game{display:block;margin:0 auto;border:solid;border-width:10px;height:80vh;width:80vw;border-color:#624401}
-      .background{display:block;margin:0 auto;height:80vh;width:80vw;}
+      .social{position:relative;left:43vw;}
+      .background{display:block;margin:0 auto;height:100%;width:100%;z-index:-5!important;}
       .breadmenu{position:relative;top:-700px;width:100px;height:100px;}
+      .breadbasket{position:absolute;top:90%;left:10%;z-index:4;}
+      .doughdisp{position:absolute;top:15%;left:30%;}
+      .dpsdisp{position:absolute;top:15%;right:30%;}
+      .bread{position:absolute;top:40%;left:48%;}
     </style>
   </head>
-  <body class="A11">
+  <body onload="setInterval(startGame, 1000)" class="A11">
     <header class="A10">
       <table class="A12">
         <tr>
@@ -43,8 +65,6 @@
             <p class="A3">Bread Clicker</p></td>
           <td><a href="home.html" target="_blank" class="A6">Home</a></td>
           <td><a href="wiki.html" target="_blank" class="A7">Wiki</a></td>
-          <td><a href="news.html" target="_blank" class="A7">News</a></td>
-          <td><a href="updates.html" target="_blank" class="A7">Updates</a></td>
           <td><a href="signin.html" class="A8">Log In</a></td>
           <td><a href="signin.html" class="A9">Register</a></td>
           <td class="A5">
@@ -83,17 +103,92 @@
         </tr>
       </table>
     </header>
-    <div class="game">
-      <img class="background" src="i/wooddrop.svg">
-      <div class="breadmenu">
-        <img class="breadbasket" src="i/breadbasket.png">
+    <div id="news">
+      <div class="B6">
+        <div class="B1">
+          <h2 class="B2">Daily Updates for BC!</h2>
+          <p class="B3">by BC Support - March 12, 2020</p>
+          <p class="B4">
+            It has been nearly a year of Bread Clicker. In the first few months, there
+            were nearly daily updates to the game, but around May we slowed down on the
+            rate of the updates to zero. In late fall of 2019, our team brought back
+            the game and tried to make Bread Clicker a much better game. Since October,
+            we have brought dozens of new concepts and additions to the game that made
+            our game so much more enjoyable to play. However, February saw no updates.
+            We plan to make March, the birth month of this game, as active as we can
+            with updates. Get excited for the future of Bread Clicker!
+          </p></div>
+        <div class="B1">
+          <h2 class="B2" style="font-size:18pt">Update 1.8 Live!</h2>
+          <p class="B3">by BC Support - March 20, 2020</p>
+          <p class="B4" style="font-size:14pt">
+            Since it has been ONE YEAR of Bread Clicker, we have treated you all with
+            a brand new set of icons in the game!
+          </p></div>
+        <div class="B1">
+          <h2 class="B2" style="font-size:18pt">Bread Clicker Discord</h2>
+          <p class="B4" style="font-size:14pt">
+            Our new BC Discord (linked in navigation bar) is the place for discussion, 
+            ideas, and behind-the-scenes info on Bread Clicker! Please feel free to 
+            join and help us come up with great ideas!
+          </p></div>
+        <script>
+          var k = 0;
+          newscase();
+            function newscase() {
+              var i;
+              var x = document.getElementsByClassName("B1");
+              for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+              k++;
+              if (k > x.length) {k = 1}
+              x[k-1].style.display = "block";
+              setTimeout(newscase, 7000);}</script>
       </div>
+    </div>
+    <div class="game">
+      <img class="background" src="i/wooddrop.jpg">
+      <div class="mainarea">
+        <button class="bread" id="bread" onclick="clicked()">
+          <img class="breadlook" src="i/wholewheat.png" />
+        </button>
+        <script>
+          var dpc = 1;
+          var dps = 3;
+          var dough = 0;
+          
+          function startGame(){
+            document.getElementById("doughnum").innerHTML = (dps + dough);
+            dough += dps;
+            document.getElementById("dpsnum").innerHTML = dps;
+          }
+          function clicked() {
+            var dpc = 1;
+            document.getElementById("bread").style.width = "100px";
+            document.getElementById("bread").style.height = "100px";
+            document.getElementById("doughnum").innerHTML = (dpc + dough);
+            dough += dpc;
+          }
+        </script>
+      </div>
+      <div class="breadmenu">
+        <script>
+          
+        </script>
+      </div>
+      <script>
+        document.cookie = "regrets=This"
+      </script>
       <div class="spreadmenu"></div>
       <div class="upgrademenu"></div>
       <div class="backgroundshop"></div>
-      <div class="thebread"></div>
-      <div class="doughdisp"></div>
-      <div class="dpsdisp"></div>
+      <div class="doughdisp">
+        <h3>Dough</h3>
+        <h3 id="doughnum">0</h3>
+      </div>
+      <div class="dpsdisp">
+        <h3>DPS</h3>
+        <h3 id="dpsnum">0</h3>
+      </div>
     </div>
   </body>
 </html>
