@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -17,9 +17,9 @@
       @keyframes f{0%,100%{opacity:0}25%,80%{opacity:1}}
       @keyframes g{0%,90%{transform:translate(0px,0px);opacity:1}92%{transform:translate(0px,-500px);opacity:0}}
       .A0{width:250px;height:70px}
-      .A1{position:absolute;top:48%;left:2.8%;height:40px;width:auto}
-      .A2{position:absolute;top:63%;left:4.3%;font:900 8pt monospace}
-      .A3{position:absolute;top:-30%;left:3.75%;font:32.5pt l}
+      .A1{position:absolute;top:48%;left:3.2%;height:35px;width:auto}
+      .A2{position:absolute;top:63%;left:5.3%;font:900 8pt monospace}
+      .A3{position:absolute;top:-30%;left:4.75%;font:32.5pt l}
       .A4{animation:f 4s infinite;height:60px;width:65px}
       .A5{position:absolute;top:5%;left:0.2%;z-index:-1;padding:5px;width:10%}
       .A6{color:#999;font:18pt h;margin:10px;pointer-events:none;cursor:default}
@@ -48,22 +48,21 @@
       .slt{display:inline;float:right;width:60%;font-size:12pt}
       .slp{height:70%;display:inline;float:left}
       span{font-weight:bold;color:green}
-      img{width:40px;}
       body{overflow:hidden;}
       .social{position:relative;left:43vw;}
+     </style>
+    <style>
       /*Game styling*/
       .background{display:block;margin:0 auto;height:100%;width:100%;z-index:-5!important;}
-      .breadmenu{position:absolute;top:70%;}
-      .breadbasket{position:absolute;top:70%;left:10%;z-index:4;pointer-events:all;width:100%;height:100%;}
-      .breadlook{background-color:transparent;}
       .doughdisp{position:absolute;top:15%;left:30%;}
       .dpsdisp{position:absolute;top:15%;right:30%;}
-      .bread{position:absolute;top:40%;left:48%;}
-      .bmenuicon{background-color:transparent;pointer-events:none;}
-      #breadbg{visibility:hidden;}
+      #bsticon{position:absolute;cursor:pointer;top:72%;left:29%;width:80px;}
+      #bstbg{visibility:hidden;position:absolute;width:25%;top:17.5%;left:37.5%;}
+      #bstsel{visibility:hidden;position:absolute;cursor:pointer;width:80px;left:42%;}
+      #bread{position:absolute;width:20%;left:40%;height:auto;top:30%;}
     </style>
   </head>
-  <body onload="setInterval(dpsTick, 10)" class="A11">
+  <body class="A11">
     <header class="A10">
       <table class="A12">
         <tr>
@@ -94,23 +93,17 @@
             <img class="A4" src="i/wheatfarm.png">
             <img class="A4" src="i/wholewheat.png">
             <script>
-              var slideIndex = 0;
-              carousel();
-              function carousel() {
-                var i;
-                var x = document.getElementsByClassName("A4");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
-                x[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 4000);
+              var i,e=0;
+              function s(){
+                var x=document.getElementsByClassName("A4");
+                for(i=0;i<x.length;i++)x[i].style.display="none";
+                ++e>x.length&&(e=1),x[e-1].style.display="block",setTimeout(s,4e3)
               }
+              s();
             </script></td>
         </tr>
       </table>
-    </header>
+     </header>
     <div id="news">
       <div class="B6">
         <div class="B1">
@@ -152,56 +145,78 @@
               x[k-1].style.display = "block";
               setTimeout(newscase, 7000);}</script>
       </div>
-    </div>
+     </div>
     <div class="game">
-      <img class="background" src="i/wooddrop.jpg">
-      <div class="mainarea">
-        <button class="bread" id="bread" onclick="clicked()">
-          <img class="breadlook" src="i/wholewheat.png" />
-        </button>
-        <script>
-          var dpc = 1;
-          var dps = 1;
-          var dough = 0;
-          function dpsTick(){
-            document.getElementById("doughnum").innerHTML = (Math.round((dps / 100) + dough));
-            dough += (dps / 100);
-            document.getElementById("dpsnum").innerHTML = dps;
-          }
-          function clicked(){
-            document.getElementById("doughnum").innerHTML = (dpc + dough);
-            dough += dpc;
-            document.getElementById("clickSound").play()
-          }
-        </script>
-      </div>
-      <div class="breadmenu">
-        <img id="breadbg" onclick="breadOpen()" src="i/margarine.png" />
-        <button class="bmenuicon" onclick="breadOpen()">
-          <img class="breadbasket" src="i/breadbasket.png" />
-        </button>
-        <script>
-          function breadOpen(){
-            document.getElementById("breadbg").style.visibility = "visible";
-            document.getElementById("clickSound").play()
-          }
-        </script>
-      </div>
-      <script>
-        document.cookie = "regrets=This"
-      </script>
-      <div class="spreadmenu"></div>
-      <div class="upgrademenu"></div>
-      <div class="backgroundshop"></div>
+      <img class="background" src="i/wooddrop.jpg"/>
+      <img id="bread" src="i/sourdough.png" onclick="clicked()">
       <div class="doughdisp">
         <h3>Dough</h3>
         <h3 id="doughnum">0</h3>
-      </div>
+       </div>
       <div class="dpsdisp">
         <h3>DPS</h3>
         <h3 id="dpsnum">0</h3>
-      </div>
+       </div>
+      <div class="breadstore">
+        <img id="bsticon" src="i/breadbasket.png" onclick="bsttog()"/>
+        <img id="bstbg" src="i/picnic.png" />
+        <img id="bstsel" src="i/roll.png" onclick="buybread(rollbought,50,2,0.1)"/>
+        <img id="bstsel" src="i/wholewheat.png" onclick="buybread(wholewheatbought,250,3,0.5)"/>
+        <img id="bstsel" src="i/sourdough.png" onclick="buybread(sourdoughbought,500,4,0.5)"/>
+        <img id="bstsel" src="i/baguette.png" onclick="buybread(baguettebought,2500,5,1)"/>
+        <img id="bstsel" src="i/croissant.png" onclick="buybread(croissantbought,5000,6,1)"/>
+        <img id="bstsel" src="i/bananabread.png" onclick="buybread(bananabought,10000,8,2)"/>
+        <img id="bstsel" src="i/pixelbread.png" onclick="buybread(seasonbought,25000,10,2)"/>
+        <img id="bstsel" src="i/cornbread.png" onclick="buybread(cornbought,50000,12,2)"/>
+       </div>
       <audio id="clickSound" src="a/click.wav"/>
+      <script>
+        var rollbought=false;
+        var wholewheatbought=false;
+        var sourdoughbought=false;
+        var baguettebought=false;
+        var croissantbought=false;
+        var bananabought=false;
+        var seasonbought=false;
+        var cornbought=false;
+        var dough = new Number(localStorage.getItem("dough"));
+        var dps = new Number(localStorage.getItem("dps"));
+        var dpc = new Number(localStorage.getItem("dpc"));
+        var clock = setInterval(doughclk,1000);
+        var save = setInterval(saveGame,5000);
+        document.getElementById("dpsnum").innerHTML = Math.round(dps*100+Number.EPSILON)/100;
+        document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/100;
+        function doughclk() {
+          dough+=dps;
+          document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/100;
+        }
+        function clicked() {
+          dough+=dpc;
+          document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/100;
+        }
+        function cancelSave(){
+          localStorage.removeItem("dough","dps","dpc");
+        }
+        function saveGame() {
+          localStorage.setItem("dough", Math.round(dough*100+Number.EPSILON)/100);
+          localStorage.setItem("dps", Math.round(dps*100+Number.EPSILON)/100);
+          localStorage.setItem("dpc", Math.round(dpc*100+Number.EPSILON)/100);
+        }
+        function bsttog(){
+          document.getElementById("bstbg").style.visibility = 'visible';
+          document.getElementById("bstsel").style.visibility = 'visible';
+        }
+        function buybread(name,cost,dpcnew,dpsplus){
+          if(name==false&&cost<=dough){
+            dough-=cost;
+            dpc=dpcnew;
+            dps+=dpsplus;
+            name=true;
+            document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/100;;
+            document.getElementById("dpsnum").innerHTML = Math.round(dps*100+Number.EPSILON)/100;;
+          }
+        }
+       </script>
     </div>
   </body>
 </html>
