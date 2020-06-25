@@ -187,20 +187,20 @@
         var clock = setInterval(doughclk,1000);
         var save = setInterval(saveGame,5000);
         document.getElementById("dpsnum").innerHTML = Math.round(dps*100+Number.EPSILON)/100;
-        document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/100;
+        document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/1000;
         function doughclk() {
           dough+=dps;
-          document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/100;
+          document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/1000;
         }
         function clicked() {
           dough+=dpc;
-          document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/100;
+          document.getElementById("doughnum").innerHTML = Math.round(dough*100+Number.EPSILON)/1000;
         }
         function cancelSave(){
           localStorage.removeItem("dough","dps","dpc");
         }
         function saveGame() {
-          localStorage.setItem("dough", Math.round(dough*100+Number.EPSILON)/100);
+          localStorage.setItem("dough", Math.round(dough*100+Number.EPSILON)/1000);
           localStorage.setItem("dps", Math.round(dps*100+Number.EPSILON)/100);
           localStorage.setItem("dpc", Math.round(dpc*100+Number.EPSILON)/100);
         }
