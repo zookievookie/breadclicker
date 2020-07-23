@@ -1,0 +1,137 @@
+    <div>
+     		<h2>Description</h2>
+        <h3>Welcome to Bread Clicker!</h3>
+          <p>
+            Create your bread empire by making dough! How do you do this, you may
+            ask? Well, just click on the bread in the middle to start making dough.
+            Click. Click some more. Tired, aren't you? Have some help! Either
+            upgrade your bread, buy spreads, or get an upgrade. Let's explore your options.</p>
+        <h3>Buy Breads</h3>
+        	<p>
+            Up your game with a two-in-one package along with a shiny new look
+            to your bread! It increases your DPS, or Dough Per Second. It will
+            also increase your DPC, or Dough Per Click. Very simple stuff.</p>
+        <h3>Buy Spreads</h3>
+           <p>
+             Increase your DPS by filling your collection with sweet and savory
+             spreads! These make every other DPS purchase a little more valuable.</p>
+        <h3>Buy Upgrades</h3>
+          <p>
+            Increase your DPS by having bread being made for you! You can
+            purchase appliances, people, businesses, and plots of land to increase
+            your DPS earnings. Upgrades can be bought multiple times as well! The
+            only limit is how much money you have.</p>
+        <h3>Buy Backgrounds</h3>
+          <p>Background info is coming soon!</p>
+        <h3>Extra Info and Credits</h3>
+          <p>
+            Scratch Demo Version: Most of the images were found via Google Search,
+            though some from other sources. Baker and Bakery: Scribblenauts.
+            Sound effects, Strawberry Jam and Honey: Scratch library. Icing: Club
+            Penguin. Sources and links will be available soon. Background music
+            and website by Zakk Volk. Game and mechanics developed by Rylan Byer.</p>
+    </div>
+    <div>
+      <h2 class="sspreadtitle">
+        Seasonal Spreads
+      </h2>
+      <div class="ssprdnov">
+        <h3 class="ssprdnovnm">
+          Gravy
+        </h3>
+        <p class="ssprdnovds">
+          "Honestly more like a dip" Nobody makes it taste better than grandma
+          or foreign food places. Ever tried prison gravy? Gives you 3% more
+          DPS on every purchase. Costs 25000 dough.
+        </p>
+      </div>
+      <div class="ssprddec">
+        <h3 class="ssprddecnm">
+          Icing
+        </h3>
+        <p class="ssprddecds">
+          " " It's the icing on the top of the.. hey, you can't eat the whole
+          tub! We've got a cake to frost! Gives you 3% more DPS on every
+          purchase. Costs 25000 dough.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="upg0">
+          <h3 class="upg0nm">
+            None
+          </h3>
+          <p class="upg0ds">
+            It's just you, my friend. Gives you nothing, just like nothing gives
+            you.
+          </p>
+        </div>
+      <div class="upg1">
+        <h3 class="upg1nm">
+          Toaster
+        </h3>
+        <p class="upg1ds">
+          "Not what I had in mind, but ok." Making bread hard since the 20th
+          century. Gives you 0.1 DPS every time you click it. Base price is 25
+          dough. Increases by 1/3 price each time.
+        </p>
+      </div>
+      <div class="upg2">
+        <h3 class="upg2nm">
+          Oven
+        </h3>
+        <p class="upg2ds">
+          "You bake bread in ovens!" These boxes of hot are sure nice for
+          baking bread and suffocating Hillary Clinton. Gives you 0.5 DPS every
+          time you click it. Base price is 100 dough. Increases by 1/3 price
+          each time.
+        </p>
+      </div>
+      <div class="upg3">
+        <h3 class="upg3nm">
+          Baker
+        </h3>
+        <p class="upg3ds">
+          "A nice baker to bake some bread" Indeed. His hair really sells it.
+          He is a good baker who has been yelled at by Gordon Ramsay at least
+          six times on live television. Gives you 1 DPS every time you click
+          it. Base price is 500 dough. Increases by 1/3 price each time.
+        </p>
+      </div>
+      <div class="upg4">
+        <h3 class="upg4nm">
+          Bakery
+        </h3>
+        <p class="upg4ds">
+          "Well, now you can start your own business in a clicker game. (Not
+          really)" Not just one baker - a whole team! The ultimate powerhouse.
+          Gives you 2 DPS every time you click it. Base price is 2500 dough.
+          Increases by 1/3 price each time.
+        </p>
+      </div>
+      <div class="upg5">
+      <h3 class="upg5nm">
+        Wheat Farm
+      </h3>
+      <p class="upg5ds">
+        "It might not be much, but hey, it's honest work." 8 acres of wheat
+        farm all to yourself. Might be helpful to hire some farmers, because
+        that's a lot of wheat. Gives you 5 DPS every time you click it. Base
+        price is 10000 dough. Increases by 1/3 price each time.
+      </p>
+      </div>
+      <div class="upg6">
+        <h3 class="upg6nm">
+          Hand Mixer
+        </h3>
+        <p class="upg6ds">
+          "Not too powerful, but you could change that..." It's fantastic for
+          quickly whipping eggs, thin batter, or terrorizing the house pet.
+          Gives you 10 DPS every time you click it. Base price is 50000 dough.
+          Increases by 1/3 price each time.
+        </p>
+    </div>
+  -->
+    </div>
+  </body>
+</html>

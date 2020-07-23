@@ -1,0 +1,85 @@
+Before Bread Clicker becomes fully encrypted and un-crackable.
+Here is the current list of standards, including:
+	*Image and Resource Naming
+	*LocalStorage/Variable Naming
+
+FILE NAMING STANDARDS
+To improve compatibility with auto-incrementing JS scripts, files are numbers.
+
+
+
+Files starting with A will address audio files.
+	Aclick1.mp3 - played randomly, very similar to the others.
+	Aclick2.mp3 - played randomly, very similar to the others.
+	Aclick3.mp3 - played randomly, very similar to the others.
+	Aupgrade1.mp3 - played when upgrade successfully bought.
+	Aupgrade2.mp3 - played when upgrade cannot be bought.
+	Asoundtrack1.mp3 - "Chef's Hat".
+	Asoundtrack2.mp3 - "Late Rise".
+	Asoundtrack3.mp3 - "Baking Groove".
+Files starting with B will address bread sprites.
+	Bsprite1.png - plain bread.
+	Bsprite2.png - roll.
+	Bsprite3.png - whole wheat.
+	Bsprite4.png - sourdough.
+	Bsprite5.png - baguette.
+	Bsprite6.png - croissant.
+	Bsprite7.png - bananabread.
+	Bsprite8.png - cornbread.
+Files starting with C will address seasonal breads.
+	CspriteJanuary.png - garlic bread.
+	CspriteFebruary.png - 
+	CspriteMarch.png - pixel bread.
+	CspriteApril.png - 
+	CspriteMay.png - 
+	CspriteJune.png - 
+	CspriteJuly.png - 
+	CspriteAugust.png - 
+	CspriteSeptember.png - 
+	CspriteOctober.png - pumpkin bread.
+	CspriteNovember.png - thanksgiving biscuit.
+	CspriteDecember.png - gingerbread.
+Files starting with D will address backdrops.
+	Dbackdrop1.jpg - wood.
+	Dbackdrop2.jpg - paper towel.
+Files starting with E will address page resources.
+	Eimage1.png - legacy logo.
+	Eimage2.png - discord logo for social/credits.
+	Eimage3.ico - favicon for site.
+	Eimage4.png -  instagram logo for social/credits.
+	Eimage5.svg - pointer icon in logo.
+	Eimage6.html - left arrow icon.
+	Eimage7.html - right arrow icon.
+	Eimage8.png - bread basket.
+	Eimage9.png - picnic shop background.
+Files starting with F will address fonts used.
+	Fbold.otf - used for headers and bold text.
+	Flogo.otf - used in the logo at the top.
+	Fregular.otf - used throughout the page and game.
+Files starting with S will address spread sprites.
+	Ssprite1.png - butter.
+	Ssprite2.png - strawberry jam.
+	Ssprite3.png - grape jelly.
+	Ssprite4.png - margarine.
+	Ssprite5.png - honey.
+Files starting with T will address seasonal spreads.
+	TspriteJanuary.png - fondue.
+	TspriteFebruary.png - 
+	TspriteMarch.png - pixel butter.
+	TspriteApril.png - 
+	TspriteMay.png - 
+	TspriteJune.png - 
+	TspriteJuly.png - 
+	TspriteAugust.png - 
+	TspriteSeptember.png - 
+	TspriteOctober.png - 
+	TspriteNovember.png - gravy.
+	TspriteDecember.png - icing.
+Files starting with U will address upgrade sprites.
+	Usprite1.png - toaster.
+	Usprite2.png - oven.
+	Usprite3.png - baker.
+	Usprite4.png - bakery.
+	Usprite5.png - wheat farm.
+	Usprite6.png - hand mixer.
+Files starting with V will address seasonal upgrades.
