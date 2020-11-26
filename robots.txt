@@ -1,6 +1,10 @@
 # Group 1
 User-agent: *
+<<<<<<< Updated upstream
 Disallow: /a/
 Disallow: /f/
 Disallow: /i/
 Disallow: /s/
+=======
+Disallow: /r/
+>>>>>>> Stashed changes

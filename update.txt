@@ -1,0 +1,26 @@
+2020-10-26 at 12:00am CST: BC Update v1.9
+	Hello all BC fans! This update attempts to end the messy transition from development platforms. 
+
+	Bread Clicker is now 100% in-browser, featuring "homemade" sprites and textures, and is light and non-intensive on your browsing engine. 
+
+	Your game is always saved within your browser, so the only way to lose your data is run any browser cleaner, cookie-blocker, or manually clearing cookies.
+
+	It has been over 18 months since the origins of this game - and it's finally time for an overhaul. 
+
+	With this update, we bring over 25 new breads, dozens of spreads, and over 40 new upgrades for you to explore. 
+
+	Additionally, achievements were added to spice up gameplay and provide incentive for doing tasks.
+
+	To wrap things up, we added the stats menu so you can track your progress.
+	
+
+
+
+	
+Future update:
+
+Along with brand new menu items, there's a whole new side of Bread Clicker for you to explore! 
+
+After purchasing your first bakery, you have to fill orders and you will get certain bonuses in return! 
+
+However, by investing in a whole crew of bakers per restaurant, all you have to do is keep an eye on all of the stores you own.

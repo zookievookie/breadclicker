@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< Updated upstream
 <html>
   <head>
     <meta charset="UTF-8">
@@ -124,10 +125,50 @@
             //shortcut possible. the code isn't easily
             //readable, but effective.
             var i,e=0;function s(){var t=document.getElementsByClassName("A4");for(i=0;i<t.length;i++)t[i].style.display="none";++e>t.length&&(e=1),t[e-1].style.display="block",setTimeout(s,4e3)}s();
+=======
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='description' content='Bread Clicker, the addictive and tasty idle clicking game.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='keywords' content='idle, bread, bread clicker, breadclicker, Bread Clicker'>
+    <link rel='icon' href='r/Eimage3.ico' type='image/x-icon'>
+    <title>Bread Clicker 1.9</title>
+    <link rel='stylesheet' href='stylesheet.css'>
+    <script src='bc.js'></script>
+   </head>
+  <body onload='loadGame()' onclick='audio()'>
+    <div class='header'>
+      <div class='logo-container'>
+        <img class='logo-pointer' src='r/Eimage5.svg'/>
+        <p class='logo-version'>v1.9</p>
+        <p class='logo-title'>Bread Clicker</p>
+        <div class='logo-slideshow'>
+          <img class='logo-image' src='r/Usprite3.png'>
+          <img class='logo-image' src='r/Usprite4.png'>
+          <img class='logo-image' src='r/Bsprite8.png'>
+          <img class='logo-image' src='r/Bsprite6.png'>
+          <img class='logo-image' src='r/BspriteDec.png'>
+          <img class='logo-image' src='r/Ssprite3.png'>
+          <img class='logo-image' src='r/Ssprite5.png'>
+          <img class='logo-image' src='r/Ssprite4.png'>
+          <img class='logo-image' src='r/Usprite2.png'>
+          <img class='logo-image' src='r/Bsprite1.png'>
+          <img class='logo-image' src='r/BspriteOct.png'>
+          <img class='logo-image' src='r/Bsprite2.png'>
+          <img class='logo-image' src='r/Bsprite4.png'>
+          <img class='logo-image' src='r/Ssprite3.png'>
+          <img class='logo-image' src='r/Usprite1.png'>
+          <img class='logo-image' src='r/Usprite5.png'>
+          <img class='logo-image' src='r/Bsprite3.png'>
+          <script>
+            var i,e=0;function s(){var t=document.getElementsByClassName('logo-image');for(i=0;i<t.length;i++)t[i].style.display='none';++e>t.length&&(e=1),t[e-1].style.display='block',setTimeout(s,4e3)}s();
+>>>>>>> Stashed changes
           </script>
         </div>
       </div>
      </div>
+<<<<<<< Updated upstream
     <div id="news">
       <!--
         Similar to the slideshow code above,
@@ -683,5 +724,442 @@
         //picks the slide instead of it being automatic.
         var l=1;function u(e){p(l=e)}function p(e){var t,a=document.getElementsByClassName("B9"),n=document.getElementsByTagName("button");for(e>a.length&&(l=1),e<1&&(l=a.length),t=0;t<a.length;t++)a[t].style.display="none";for(t=0;t<n.length;t++)n[t].className=n[t].className.replace(" but","");a[l-1].style.display="block",n[l-1].className+=" but"}p(l);</script>
      </div>
+=======
+    <div class='game'>
+      <img class='background' src='r/Dbackdrop1.jpg'/>
+      <img id='bread' src='r/Bsprite1.png' onclick='clicked()'>
+      <div class='doughdisp'>
+        <h3>Dough</h3>
+        <h3 id='doughnum'>0</h3>
+       </div>
+      <div class='dpsdisp'>
+        <h3>DPS</h3>
+        <h3 id='dpsnum'>0</h3>
+       </div>
+      <div id='breadstore'>
+        <img id='bsticon' src='r/Eimage8.png' onclick='togglepages("breadstore")'/>
+        <img id='bstbg' src='r/Eimage9.png'/>
+        <div class='bstitems'>
+          <div class='bread-item' id='item-roll'>
+            <img class='bread-image' id='image-roll' src='r/Bsprite2.png' onclick='roll()'/>
+            <h3 class='bread-stats' id='stats-roll'>Roll<br>Cost: 50<br>DPC: 2<br>DPS: +0.1</h3>
+           </div>
+          <div class='bread-item' id='item-wholewheat'>
+            <img class='bread-image' id='image-wholewheat' src='r/Bsprite3.png' onclick='wheat()'/>
+            <h3 class='bread-stats' id='stats-wholewheat'>Whole Wheat<br>Cost: 250<br>DPC: 3<br>DPS: +0.5</h3>
+           </div>
+          <div class='bread-item' id='item-sourdough'>
+            <img class='bread-image' id='image-sourdough' src='r/Bsprite4.png' onclick='sour()'/>
+            <h3 class='bread-stats' id='stats-sourdough'>Sourdough<br>Cost: 500<br>DPC: 4<br>DPS: +0.5</h3>
+           </div>
+          <div class='bread-item' id='item-baguette'>
+            <img class='bread-image' id='image-baguette' src='r/Bsprite5.png' onclick='bag()'/>
+            <h3 class='bread-stats' id='stats-baguette'>Baguette<br>Cost: 2,500<br>DPC: 5<br>DPS: +1</h3>
+           </div>
+          <div class='bread-item' id='item-croissant'>
+            <img class='bread-image' id='image-croissant' src='r/Bsprite6.png' onclick='croi()'/>
+            <h3 class='bread-stats' id='stats-croissant'>Croissant<br>Cost: 5,000<br>DPC: 6<br>DPS: +1</h3>
+            </div>
+          <div class='bread-item' id='item-bananabread'>
+            <img class='bread-image' id='image-bananabread' src='r/Bsprite7.png' onclick='bana()'/>
+            <h3 class='bread-stats' id='stats-bananabread'>Banana Bread<br>Cost: 10,000<br>DPC: 8<br>DPS: +2</h3>
+           </div>
+          <div class='bread-item' id='item-seasonalbread'>
+            <img class='bread-image' id='image-seasonalbread' src='r/BspriteNov.png' onclick='bseas()'/>
+            <h3 class='bread-stats' id='stats-seasonalbread'>Thanksgiving Biscuit<br>Cost: 25,000<br>DPC: 10<br>DPS: +2</h3>
+           </div>
+          <div class='bread-item' id='item-cornbread'>
+            <img class='bread-image' id='image-cornbread' src='r/Bsprite8.png' onclick='corn()'/>
+            <h3 class='bread-stats' id='stats-cornbread'>Cornbread<br>Cost: 50,000<br>DPC: 12<br>DPS: +2</h3>
+           </div>
+          <div class='bread-item' id='item-engmuffin'>
+            <img class='bread-image' id='image-engmuffin' src='r/Bsprite9.jpg' onclick='engmuff()'/>
+            <h3 class='bread-stats' id='stats-engmuffin'>English Muffin<br>Cost: 125,000<br>DPC: 15<br>DPS: +3</h3>
+           </div>
+          <div class='bread-item' id='item-pita'>
+            <img class='bread-image' id='image-pita' src='r/Bsprite10.jpg' onclick='pita()'/>
+            <h3 class='bread-stats' id='stats-pita'>Pita Bread<br>Cost: 250,000<br>DPC: 18<br>DPS: +3</h3>
+           </div>
+          <div class='bread-item' id='item-scone'>
+            <img class='bread-image' id='image-scone' src='r/Bsprite11.jpg' onclick='scone()'/>
+            <h3 class='bread-stats' id='stats-scone'>Scone<br>Cost: 500,000<br>DPC: 21<br>DPS: +3</h3>
+           </div>
+          <div class='bread-item' id='item-breadstk'>
+            <img class='bread-image' id='image-breadstk' src='r/Bsprite12.jpg' onclick='bdstk()'/>
+            <h3 class='bread-stats' id='stats-breadstk'>Breadstick<br>Cost: 1 million<br>DPC: 24<br>DPS: +3</h3>
+           </div>
+          <div class='bread-item' id='item-cinnroll'>
+            <img class='bread-image' id='image-cinnroll' src='r/Bsprite13.jpg' onclick='cinroll()'/>
+            <h3 class='bread-stats' id='stats-cinnroll'>Cinnamon Roll<br>Cost: 1.3 million<br>DPC: 27<br>DPS: +4</h3>
+           </div>
+          <div class='bread-item' id='item-multigrain'>
+            <img class='bread-image' id='image-multigrain' src='r/Bsprite14.jpg' onclick='multi()'/>
+            <h3 class='bread-stats' id='stats-multigrain'>Multigrain Bread<br>Cost: 1.7 million<br>DPC: 30<br>DPS: +4</h3>
+           </div>
+          <div class='bread-item' id='item-brioche'>
+            <img class='bread-image' id='image-brioche' src='r/Bsprite15.jpg' onclick='brioche()'/>
+            <h3 class='bread-stats' id='stats-brioche'>Brioche Bun<br>Cost: 2.5 million<br>DPC: 35<br>DPS: +4</h3>
+           </div>
+          <div class='bread-item' id='item-pumpernickel'>
+            <img class='bread-image' id='image-pumpernickel' src='r/Bsprite16.jpg' onclick='pmpnck()'/>
+            <h3 class='bread-stats' id='stats-pumpernickel'>Pumpernickel<br>Cost: 3.3 million<br>DPC: 40<br>DPS: +4</h3>
+           </div>
+          <div class='bread-item' id='item-crouton'>
+            <img class='bread-image' id='image-crouton' src='r/Bsprite17.jpg' onclick='crouton()'/>
+            <h3 class='bread-stats' id='stats-crouton'>Crouton<br>Cost: 4.6 million<br>DPC: 45<br>DPS: +4</h3>
+           </div>
+          <div class='bread-item' id='item-fruitcake'>
+            <img class='bread-image' id='image-fruitcake' src='r/Bsprite18.jpg' onclick='fruitcake()'/>
+            <h3 class='bread-stats' id='stats-fruitcake'>Fruitcake<br>Cost: 6.3 million<br>DPC: 50<br>DPS: +5</h3>
+           </div>
+          <div class='bread-item' id='item-lefse'>
+            <img class='bread-image' id='image-lefse' src='r/Bsprite19.jpg' onclick='lefse()'/>
+            <h3 class='bread-stats' id='stats-lefse'>Lefse<br>Cost: 7.7 million<br>DPC: 55<br>DPS: +5</h3>
+           </div>
+          <div class='bread-item' id='item-crumpet'>
+            <img class='bread-image' id='image-crumpet' src='r/Bsprite20.jpg' onclick='crumpet()'/>
+            <h3 class='bread-stats' id='stats-crumpet'>Crumpet<br>Cost: 10 million<br>DPC: 60<br>DPS: +5</h3>
+           </div>
+          <div class='bread-item' id='item-rye'>
+            <img class='bread-image' id='image-rye' src='r/Bsprite21.jpg' onclick='rye()'/>
+            <h3 class='bread-stats' id='stats-rye'>Rye Bread<br>Cost: 14.5 million<br>DPC: 68<br>DPS: +5</h3>
+           </div>
+          <div class='bread-item' id='item-bagel'>
+            <img class='bread-image' id='image-bagel' src='r/Bsprite22.jpg' onclick='bagel()'/>
+            <h3 class='bread-stats' id='stats-bagel'>Bagel<br>Cost: 18.2 million<br>DPC: 76<br>DPS: +6</h3>
+           </div>
+          <div class='bread-item' id='item-flatbread'>
+            <img class='bread-image' id='image-flatbread' src='r/Bsprite23.jpg' onclick='flatbrd()'/>
+            <h3 class='bread-stats' id='stats-flatbread'>Flatbread<br>Cost: 25 million<br>DPC: 84<br>DPS: +6</h3>
+           </div>
+          <div class='bread-item' id='item-crepe'>
+            <img class='bread-image' id='image-crepe' src='r/Bsprite24.jpg' onclick='crepe()'/>
+            <h3 class='bread-stats' id='stats-crepe'>Crepe<br>Cost: 52 million<br>DPC: 92<br>DPS: +6</h3>
+           </div>
+          <div class='bread-item' id='item-ricebread'>
+            <img class='bread-image' id='image-ricebread' src='r/Bsprite25.jpg' onclick='ricebrd()'/>
+            <h3 class='bread-stats' id='stats-ricebread'>Rice Bread<br>Cost: 125 million<br>DPC: 100<br>DPS: +6</h3>
+           </div>
+         </div>
+       </div>
+      <div id='spreadstore'>
+        <img id='ssticon' src='r/Eimage10.png' onclick='togglepages("spreadstore")'/>
+        <img id='sstbg' src='r/Eimage9.png'/>
+        <div class='sstitems'>
+          
+          <div class='spread-item' id='item-butter'>
+            <img class='spread-image' id='image-butter' src='r/SSprite1.png' onclick='butter()'/>
+            <h3 class='spread-stats' id='stats-butter'>Butter<br>Cost: 100<br>DPS boost: +1%</h3>
+           </div>
+          <div class='spread-item' id='item-sjam'>
+            <img class='spread-image' id='image-sjam' src='r/SSprite2.png' onclick='sjam()'/>
+            <h3 class='spread-stats' id='stats-sjam'>Strawberry Jam<br>Cost: 1000<br>DPS boost: +1%</h3>
+           </div>
+          <div class='spread-item' id='item-gjel'>
+            <img class='spread-image' id='image-gjel' src='r/SSprite3.png' onclick='gjel()'/>
+            <h3 class='spread-stats' id='stats-gjel'>Grape Jelly<br>Cost: 5000<br>DPS boost: +2%</h3>
+           </div>
+          <div class='spread-item' id='item-marg'>
+            <img class='spread-image' id='image-marg' src='r/SSprite4.png' onclick='marg()'/>
+            <h3 class='spread-stats' id='stats-marg'>Margarine<br>Cost: 10000<br>DPS boost: +2%</h3>
+           </div>
+          <div class='spread-item' id='item-sseas'>
+            <img class='spread-image' id='image-sseas' src='r/TSpriteNov.png' onclick='sseas()'/>
+            <h3 class='spread-stats' id='stats-sseas'>Gravy<br>Cost: 25000<br>DPS boost: +3%</h3>
+           </div>
+          <div class='spread-item' id='item-honey'>
+            <img class='spread-image' id='image-honey' src='r/SSprite5.png' onclick='hon()'/>
+            <h3 class='spread-stats' id='stats-honey'>Honey<br>Cost: 50000<br>DPS boost: +3%</h3>
+           </div>
+         </div>
+       </div>
+      <div id='upgradestore'>
+        <img id='usticon' src='r/Usprite4.png' onclick='togglepages("upgradestore")'/>
+        <img id='ustbg' src='r/Eimage9.png'/>
+        <div class='ustitems'>
+          <div class='upgrade-item' id='item-toaster'>
+            <img class='upgrade-image' id='image-toaster' src='r/Usprite1.png' onclick='toaster()'/>
+            <h3 class='upgrade-stats' id='stats-toaster'>Toaster<br>Cost: <span id="toastercost">25</span><br>DPS Increase: +0.1</h3>
+           </div>
+          <div class='upgrade-item' id='item-oven'>
+            <img class='upgrade-image' id='image-oven' src='r/Usprite2.png' onclick='oven()'/>
+            <h3 class='upgrade-stats' id='stats-oven'>Oven<br>Cost: <span id="ovencost">1000</span><br>DPS Increase: +0.5</h3>
+           </div>
+          <div class='upgrade-item' id='item-baker'>
+            <img class='upgrade-image' id='image-baker' src='r/Usprite3.png' onclick='baker()'/>
+            <h3 class='upgrade-stats' id='stats-baker'>Baker<br>Cost: <span id="bakercost">5000</span><br>DPS Increase: +1</h3>
+           </div>
+          <div class='upgrade-item' id='item-bakery'>
+            <img class='upgrade-image' id='image-bakery' src='r/Usprite4.png' onclick='bakery()'/>
+            <h3 class='upgrade-stats' id='stats-bakery'>Bakery<br>Cost: <span id="bakerycost">10000</span><br>DPS Increase: +2</h3>
+           </div>
+          <div class='upgrade-item' id='item-wheatfarm'>
+            <img class='upgrade-image' id='image-wheatfarm' src='r/Usprite5.png' onclick='wheatfarm()'/>
+            <h3 class='upgrade-stats' id='stats-wheatfarm'>Wheat Farm<br>Cost: <span id="wheatfarmcost">25000</span><br>DPS Increase: +5</h3>
+           </div>
+          <div class='upgrade-item' id='item-mixer'>
+            <img class='upgrade-image' id='image-mixer' src='r/Usprite6.png' onclick='mixer()'/>
+            <h3 class='upgrade-stats' id='stats-mixer'>Mixer<br>Cost: <span id="mixercost">50000</span><br>DPS Increase: +10</h3>
+           </div>
+         </div>
+       </div>
+      <div id='statsmenu'>
+        <h3 id='statsbutton' onclick='togglepages("statsmenu")'>Stats<br>(Experimental!)</h3>
+        <h3>DPC: <span id='statDPC'>0</span></h3>
+       </div>
+     </div>
+    <div class='widgets'>
+      <div id='news'>
+        <div class='news-insert'>
+          <div class='news-article'>
+            <h2 class='news-title'>Bread Clicker's Future</h2>
+            <p class='news-author'>by BC Support - July 23, 2020</p>
+            <p class='news-content'>
+              After a very long break from development, the Bread Clicker team has returned
+              bigger than ever to bring a completely re-written game. The game to the left
+              might seem different, and that's because Bread Clicker has been 100% implemented
+              into the webpage. Every pixel you see and line of code responsible for it is
+              coming from our servers only to ensure fast loading and reliability.
+            </p>
+           </div>
+          <div class='news-article'>
+            <h2 class='news-title' style='font-size:18pt'>Update 1.9 Live!</h2>
+            <p class='news-author'>by BC Support - Nov 26, 2020</p>
+            <p class='news-content' style='font-size:12pt'>
+              Happy Thanksgiving! It surely has been a while since an update has been released
+              to Bread Clicker, but an unexpected update needed to happen! Behind the scenes,
+              we have came up with dozens of new upgrade ideas to keep the game thriving! As 
+              well as adding in some test upgrades, we have finally incorporated some music to
+              keep your ears happy. We are getting closer to the full release of Bread Clicker,
+              so get ready for some big changes later!
+            </p>
+           </div>
+          <div class='news-article'>
+            <h2 class='news-author' style='font-size:18pt'>Bread Clicker Discord</h2>
+            <p class='news-content' style='font-size:14pt'>
+              The Bread Clicker Discord server is the place for discussion, 
+              ideas, and behind-the-scenes info on Bread Clicker! Feel free to 
+              join and help us come up with great ideas! <span>discord.gg/Ywksydr</span>
+            </p>
+           </div>
+          <script>
+            var k=0;function newscase(){for(var e=document.getElementsByClassName('news-article'),s=0;s<e.length;s++)e[s].style.display='none';++k>e.length&&(k=1),e[k-1].style.display='block',setTimeout(newscase,11e3)}newscase();</script>
+         </div>
+       </div>
+      <div class='wiki'>
+        <div class='B3'>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite1.png'>
+            <h3 class='slt'>
+              The original bread of Bread Clicker! White bread is the right bread,
+              said John Adams I think. Your everyday type of bread. Goes well with
+              ham and cheese, but can be used for just about everything. Gives you
+              <span>1 DPC.</span>
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite2.png'>
+            <h3 class='slt'>
+              Being the first purchase you could make in the game, the roll is a
+              classic bread sporting a nice round shape that was added on March 25,
+              2019 in update 0.1.1. 'I'm on a ROLL!!! Hahahaha!' For the more
+              adventurous. In the shape of a hemisphere. Line down the middle for
+              your spreads, like butter. Gives you <span>2 DPC</span> and <span>
+              +0.1 DPS</span>. Costs <span>50 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite3.png'>
+            <h3 class='slt'>
+              This tasty treat originates back to March 26, 2019 when it was added
+              along with the DPS counter and World Record display in update 0.1.2.5.
+              'Not to be confused for Hole Wheat, Whole Heat, or Hole Heat.' Definitely
+              delicious and healthy. Full of your necessary calories, carbs, and fiber
+              to get you through the struggles life. Gives you <span>3 DPC</span>
+              and <span>+0.4 DPS</span>. Costs <span>250 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite4.png'>
+            <h3 class='slt'>
+              A fine addition to the bread basket, sourdough was released on April
+              3, 2019 in update 0.4. 'It's not even tart.' Not fantastically sour,
+              but whoever made the crosses on top gets their 5-star review from me.
+              Gives you <span>4 DPC</span> and <span>+0.5 DPS</span>. Costs <span>500
+              dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite5.png'>
+            <h3 class='slt'>
+              The longest bread currently available. It was released on April 16,
+              2019 in update 0.8. 'HONHONHON OUI OUI BAGUETTE' French delicacy. It
+              can be used to knock somebody out, I'll give 'em that. How are you
+              supposed to eat these? Gives you <span>5 DPC</span> and <span>
+              +1 DPS</span>. Costs <span>2500 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite6.png'>
+            <h3 class='slt'>
+              Another french delicacy added to the menu on April 25, 2019 in update
+              0.9.9. 'Only the French truly know how to spell corantsanant' Hard to
+              spell, easy to pronounce. Cwa-sawn. By the way, are you gonna finish
+              that croissant? Gives you <span>6 DPC</span> and <span>+1 DPS</span>.
+              Costs <span>5000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite7.png'>
+            <h3 class='slt'>
+              At the full release of Bread Clicker 1.0 on April 27, 2019, the classic
+              fruity bread, banana bread, was added to the game. 'A fan favorite,
+              but not a flan favorite' Butter it, don't bother toasting it! This
+              fruity delight will set you ahead of the game with its stats. It will
+              set you back with its price though! (Tax not included) Gives you <span>
+              8 DPC</span> and <span>+2 DPS</span>. Costs <span>10000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Bsprite8.png'>
+            <h3 class='slt'>
+              The breads keep getting more diverse, but cornbread, added on October
+              29, 2019 in update 1.3.7, takes it to a new level. 'Can also be a muffin.'
+              Made from corn, and it is delicious with as much butter as you can
+              fit onto it. Makes you feel poor though. Gives you <span>12 DPC</span>
+              and <span>+2 DPS</span>. Costs <span>50000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/BspriteOct.png'>
+            <h3 class='slt'>
+              After the return of our developers in late autumn, we added the first
+              seasonal bread on October 23, 2019 in update 1.3.0. 'Honestly just the 
+              Halloween bread because of jack-o-lanterns.' Tastes good only once a year. 
+              Will probably end up feeling sad after consuming a whole loaf. I speak from 
+              personal experience. Gives you <span>10 DPC</span> and <span>+2 DPS</span>. 
+              Costs <span>25000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/BspriteNov.png'>
+            <h3 class='slt'>
+              Following the tradition of monthly breads, we introduced the thanksgiving
+              biscuit on November 1, 2019 in update 1.4.0. 'Not the English kind, the 
+              American kind.' Tastes good only once a year. The pilgrims probably didn't 
+              have these at the first Thanksgiving. They're warm and flaky like a microwaved 
+              bowl of cereal. Gives you <span>10 DPC</span> and <span>+2 DPS</span>. Costs 
+              <span>25000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/BspriteDec.png'>
+            <h3 class='slt'>
+              The old classic gingerbread house tradition, typically done in December,
+              became the seasonal bread in December of 2019 in an unknown update. 'Not 
+              to be confused with the cookie, gingerbread cakes are a sweet bread made 
+              with ginger.' It's the gingerbread man! Honestly the flavor isn't too much 
+              to brag about, but still pretty good. Gives you <span>10 DPC</span> and 
+              <span>+2 DPS</span>. Costs <span>25000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/BspriteJan.png'>
+            <h3 class='slt'>
+              A long needed addition to Bread Clicker, garlic bread was added to the game 
+              in January of 2019 in an unknown update. 'Garlic Cheese Bread: You can't go 
+              wrong with this!' Mmm, I can smell it from miles away! I'd imagine it goes
+              great with a lot of dishes. Gives you <span>10 DPC</span> and <span>+2 DPS</span>. 
+              Costs <span>25000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/BspriteMar.png'>
+            <h3 class='slt'>
+              To celebrate 1 year of Bread Clicker, we offer a pixelated bread
+              available for the whole month of March. 'An old-school piece of 
+              bread to celebrate 1 year of Bread Clicker!' It's just a little bit
+              crunchier than the original bread it represents. Gives you <span>
+              10 DPC</span> and <span>+2 DPS</span>. Costs <span>25000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Ssprite1.png'>
+            <h3 class='slt'>
+              A super tasty and original classic that you just can't pass up on!
+              This was the first spread that was placed into the game on April 2,
+              2019 in update 0.1.4. 'It is butter. You butter believe it!' Straight
+              from the farm, slightly salted. A very affordable purchase from the
+              grocery store or in-game. Gives you <span>1% bonus on DPS</span>.
+              Costs <span>100 dough</span>.</h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Ssprite2.png'>
+            <h3 class='slt'>
+              A fruity addition to the game, strawberry jam was the second spread
+              first available on April 3, 2019 in update 0.4. 'It's not jelly, it's
+              JAM! *Music plays*' Sweet and jammy, just the way everyone likes it.
+              Careful, may contain animal bones! Gives you <span>1% bonus on DPS</span>.
+              Costs <span>1000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Ssprite3.png'>
+            <h3 class='slt'>
+              Half of a PB&J is jelly, and grape jelly has always been the king
+              of all jelly. This classic staple food was added on April 10, 2019
+              in update 0.7. 'A classic flavor.' You truly can't beat the classics!
+              Gives you <span>2% bonus on DPS</span>. Costs <span>5000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Ssprite4.png'>
+            <h3 class='slt'>
+              If you are incapable of making lactase, this spread is perfect for you!
+              Margarine, the substitute for butter, was added on April 17, 2019
+              in update 0.8.2. 'WOW! I can't believe it! IT'S MARGARINE' It's not
+              real butter. It is growth-stunting chemicals that will give you digestion
+              problems and chronic but mild headaches. Gives you <span>2% bonus on DPS</span>.
+              Costs <span>10000 dough</span>.
+            </h3></div>
+          <div class='wiki-entry'>
+            <img class='slp' src='r/Ssprite5.png'>
+            <h3 class='slt'>
+              The bee is a rather important thing in our food chain, and they produce
+              some of the best natural sugars of all insects. Honey was added on November
+              19, 2019 in update 1.5.3. What can I say? It's honey.' It's not the bee's
+              knees. But hey, it doesn't expire! Don't give it to your newborn, it will
+              suffocate. Gives you <span>3% bonus on DPS</span>. Costs <span>50000 dough</span>.
+             </h3>
+           </div>
+        </div>
+        <div class='opt'>
+          <h2>Breads</h2>
+          <button onclick='u(1)' style='background-color:tomato'>Basic Bread</button>
+          <button onclick='u(2)' style='background-color:slateblue'>Roll</button>
+          <button onclick='u(3)' style='background-color:gold'>Whole Wheat</button>
+          <button onclick='u(4)' style='background-color:seagreen'>Sourdough</button>
+          <button onclick='u(5)' style='background-color:sienna'>Baguette</button>
+          <button onclick='u(6)' style='background-color:salmon'>Croissant</button>
+          <button onclick='u(7)' style='background-color:yellow'>Banana Bread</button>
+          <button onclick='u(8)' style='background-color:sandybrown'>Cornbread</button>
+          <br>
+          <h2>Seasonal Breads</h2>
+          <button onclick='u(9)' style='background-color:orange'>Pumpkin Bread</button>
+          <button onclick='u(10)' style='background-color:saddlebrown'>Thanksgiving Biscuit</button>
+          <button onclick='u(11)' style='background-color:red'>Gingerbread</button>
+          <button onclick='u(12)' style='background-color:teal'>Garlic Bread</button>
+          <button onclick='u(13)' style='background-color:green'>Pixel Bread</button>
+          <br>
+          <h2>Spreads</h2>
+          <button onclick='u(14)'>Butter</button>
+          <button onclick='u(15)'>Strawberry Jam</button>
+          <button onclick='u(16)'>Grape Jelly</button>
+          <button onclick='u(17)'>Margarine</button>
+          <button onclick='u(18)'>Honey</button>
+          <br>
+          <h2>Seasonal Spreads</h2>
+          <button onclick='u(19)'>Gravy</button>
+          <button onclick='u(20)'>Icing</button>
+          <button onclick='u(21)'>Fondue</button>
+          <br>
+          <h2>Upgrades</h2>
+          <button onclick='u(22)'>Toaster</button>
+          <button onclick='u(23)'>Oven</button>
+          <button onclick='u(24)'>Baker</button>
+          <button onclick='u(25)'>Bakery</button>
+          <button onclick='u(26)'>Wheat Farm</button>
+          <button onclick='u(27)'>Hand Mixer</button>
+        </div>
+        <script>
+          var l=1;function u(e){p(l=e)}function p(e){var t,a=document.getElementsByClassName('wiki-entry'),n=document.getElementsByTagName('button');for(e>a.length&&(l=1),e<1&&(l=a.length),t=0;t<a.length;t++)a[t].style.display='none';for(t=0;t<n.length;t++)n[t].className=n[t].className.replace(' but',"");a[l-1].style.display='block',n[l-1].className+=' but'}p(l)
+        </script>
+       </div>
+    </div>
+>>>>>>> Stashed changes
   </body>
 </html>
